@@ -9,6 +9,27 @@ body {
     background-color: #f9f9f9;
     line-height: 1.8;
 }
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(28,110,164,0.71);
+    padding: 10px 0;
+    z-index: 1000; 
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+}
+.navbar a:hover {
+    background-color: #555;
+}
+.content {
+    margin-top: 60px; 
+}
 p, ul, ol {
     max-width: 70ch;
 }
@@ -60,11 +81,13 @@ a{
     color: #3498db;
     text-decoration: none;
     transition: color 0.3s ease;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease;
 
 }
 a:hover {
     color: #2980b9;
-
+    border-bottom-color:#3498db;
 }
 
 
@@ -79,21 +102,25 @@ img{
     object-fit: cover;
     width: 200px;
     height: 150px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
     
 }
 
 img:hover{
    transform: scale(1.05);
+   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+   transform: translateY(-5px);
 }
 @media (max-width: 600px){
     body {
         padding: 10px;
+        font-size: 16px;
     }
     h1 {
         font-size: 2rm;
     }
     h2 {
-        font-size: 1.7em;
+        font-size: 1.8em;
     }
     h3{
         font-size: 1.3em;
