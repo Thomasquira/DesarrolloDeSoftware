@@ -32,7 +32,36 @@ body {
     margin-top: 60px; 
 }
 
+/* Estilos del botón flotante */
+.scrollToTopBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    padding: 10px 20px;
+    font-size: 30px;
+    background: linear-gradient(to right, #4CAF50, #1e88e5); /* Degradado */
+    background-color: rgba(28,110,164,0.71);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0; /* Inicialmente oculto */
+    visibility: hidden; /* Inicialmente oculto */
+    transform: scale(0.8); /* Comienza con un tamaño más pequeño */
+    transition: opacity 0.5s ease, visibility 0s 0.5s, transform 0.5s ease; /* Transición suave */
+}
 
+.scrollToTopBtn.show {
+    opacity: 1; /* Opacidad completa cuando está visible */
+    visibility: visible; /* Hacerlo visible */
+    transform: scale(1); /* Escala normal cuando está visible */
+    transition: opacity 0.5s ease, visibility 0s 0s, transform 0.5s ease; /* Transición de visibilidad */
+}
+
+.scrollToTopBtn:hover {
+    background-color: #3498db;
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón por encima */
+}
 
 .background-image {
   background-image: url('Imagenes/5-etapas-del-proceso-de-desarrollo-de-software.jpg') ;
