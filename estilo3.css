@@ -1,0 +1,172 @@
+/* Info card styles */
+#info-card {
+    margin: 20px;
+    position: relative;
+}
+
+.highlight {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Tooltip default state */
+.tooltip {
+    display: none;
+    position: absolute;
+    top: 100%;
+    /* Coloca el tooltip justo debajo del texto */
+    left: 0;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    font-size: 1rem;
+    z-index: 10;
+}
+
+/* Hover effect specifically on the text */
+.highlight:hover {
+    color: #6edf6a;
+    text-shadow: 0 0 10px #6edf6a;
+}
+
+/* Show tooltip only when hovering the specific text */
+.highlight:hover~.tooltip {
+    display: block;
+}
+
+#body {
+    background: #D0E4F5 url("binario.gif") repeat scroll 0 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* Fuente principal */
+    line-height: 1.6;
+    /* Espaciado entre líneas */
+    margin: 0;
+    padding: 0;
+    background: #051b04;
+    /* Fondo suave */
+    color: #333;
+    /* Color de texto */
+}
+
+/* Encabezado principal */
+h1 {
+    text-align: center;
+    background: linear-gradient(to right, #4CAF50, #09240d);
+    /* Degradado */
+    color: white;
+    padding: 20px 0;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Encabezados de sección */
+h2 {
+    text-shadow: 0 1px 0 #f1f1f1, 0 2px 0 #ffffff, 0 3px 0 #ffffff, 0 4px 0 #ffffff, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15), 2px 2px 2px rgba(62, 206, 70, 0);
+    color: #323b2e;
+
+}
+
+h3 {
+    color: #136916;
+    /* Verde llamativo */
+    margin-bottom: 10px;
+    border: 5px solid #246420;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+
+
+/* Párrafos */
+p {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+/* Fuentes */
+p.source {
+    font-size: 0.8rem;
+    font-style: italic;
+    text-align: right;
+    color: #555;
+}
+
+/* Listas */
+ul,
+ol {
+    margin: 20px 0;
+    padding-left: 40px;
+}
+
+ul li,
+ol li {
+    margin: 5px 0;
+}
+
+/* Código */
+code {
+    background: #f0f0f0;
+    /* Fondo gris claro */
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+/* Secciones */
+section {
+    background: white;
+    /* Fondo blanco para secciones */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+    max-width: 800px;
+}
+
+/* Footer */
+footer {
+    background: #0d2014;
+    /* Fondo azul */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Links */
+a {
+    color: #1e88e5;
+    /* Azul */
+    text-decoration: none;
+}
+
+
+
+/* Botones (si los necesitas) */
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+
+}
