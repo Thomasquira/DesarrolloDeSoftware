@@ -192,5 +192,13 @@ img:hover{
         display: block;
         margin: 10px auto;
     }
+    .navbar a{
+        font-size: 0.8rem;
+       padding: 4px;
+       margin: 0 13px;
+
+
+     }
+
 
 }
