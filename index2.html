@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalación y Configuración de IDEs</title>
+    <link rel="stylesheet" href="css2.css">
+</head>
+<body>
+    <script src="java2.js"></script>
+    
+    <!-- Barra de navegación -->
+    <div class="navbar">
+        <a href="Index.html">Inicio</a>
+        <a href="index3.html">Desarrollo de Software</a>
+        <a href="index2.html">IDEs: Instalación y configuración</a>
+        
+        <!-- Icono del menú en pantallas pequeñas -->
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+
+        <!-- Menú oculto por defecto -->
+        <div class="menu hidden" id="menu">
+            <a href="Index.html">Inicio</a>
+            <a href="index2.html">Desarrollo de Software</a>
+            <a href="index3.html">IDEs: Instalación y configuración</a>
+        </div>
+    </div>
+
+    <div class="container" style="margin-top: 60px;">
+    <h1>---- IDEs: Instalación y Configuración ----</h1>
+
+    <h2>Visual Studio Code</h2>
+    <h3>Instalación</h3>
+    <ol>
+        <li>Ve a la página de Microsoft Visual Studio Code en Academic Software y le damos clic en 'Descargar Visual Studio Code'. Esto dependiendo del sistema operativo que estemos utilizando en este caso sería un Windows 10 Pro, le tendríamos que dar a Windows 10, 11.</li>
+        <img src="img/1.png" alt="Imagen de ejemplo" />
+        <li>Abre el archivo de instalación .exe en tu carpeta de descargas para iniciar la instalación.</li>
+        <img src="img/2.png" alt="Imagen de ejemplo" />
+        <li>Lee y acepta el acuerdo de licencia. Haz clic en Next para continuar.</li>
+        <img src="img/3.png" alt="Imagen de ejemplo" />
+        <li>Puedes cambiar la ubicación de la carpeta de instalación o mantener la configuración predeterminada. Haz clic en Next para continuar.</li>
+        <img src="img/4.png" alt="Imagen de ejemplo" />
+        <li>Elige si deseas cambiar el nombre de la carpeta de accesos directos en el menú Inicio o si no deseas instalar accesos directos en absoluto. Haz clic en Next.</li>
+        <img src="img/5.png" alt="Imagen de ejemplo" />
+        <li>Selecciona las tareas adicionales, por ej. crear un icono en el escritorio o añadir opciones al menú contextual de Windows Explorer. Haz clic en Next.</li>
+        <img src="img/6.png" alt="Imagen de ejemplo" />
+        <li>Haz clic en Install para iniciar la instalación.</li>
+        <img src="img/7.png" alt="Imagen de ejemplo" />
+        <li>El programa está instalado y listo para usar. Haz clic en Finish para finalizar la instalación y lanzar el programa.</li>
+        <img src="img/8.png" alt="Imagen de ejemplo" />
+    </ol>
+
+    <h3>Configuración Inicial</h3>
+    <table>
+        <tbody>
+            <tr>
+                <!-- Información de la lista a la izquierda -->
+                <td style="text-align: left; vertical-align: top; padding-right: 20px;">
+                    <ul>
+                        <li><strong>Choose your theme</strong>: Permite personalizar los colores del editor seleccionando un tema visual que sea cómodo para tus ojos.</li>
+                        <li><strong>Rich support for all your languages</strong>: Configura el soporte para diferentes lenguajes de programación. VS Code es compatible con extensiones que añaden características específicas como resaltado de sintaxis, autocompletado, etc.</li>
+                        <li><strong>Tune your settings</strong>: Permite personalizar cómo funciona VS Code. Puedes cambiar fuente, tamaño del texto, formato del código, etc., desde el archivo <code>settings.json</code>.</li>
+                        <li><strong>Sync settings across devices</strong>: Habilita la sincronización en la nube para usar las mismas configuraciones, extensiones y temas en diferentes computadoras.</li>
+                        <li><strong>Unlock productivity with the Command Palette</strong>: Introduce la Command Palette, una herramienta poderosa para ejecutar cualquier comando en VS Code sin usar el ratón.</li>
+                        <li><strong>Open up your code</strong>: Abre una carpeta o archivo donde tengas tu código fuente.</li>
+                        <li><strong>Watch video tutorials</strong>: Acceso a videos oficiales que explican cómo usar VS Code de forma efectiva.</li>
+                    </ul>
+                </td>
+                <!-- Imagen a la derecha -->
+                <td style="text-align: center; vertical-align: top;">
+                    <img src="img/9.png" alt="Imagen de ejemplo" style="max-width: 200px; height: auto;"/>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Guía para las opciones superiores y laterales</h3>
+    <p><strong>Menú Superior (Barra de Menús):</strong></p>
+    <table>
+        </tbody>
+            <tr>
+                <!-- Información de la lista a la izquierda -->
+                <td style="text-align: left; vertical-align: top; padding-right: 20px;">
+                    <ul>
+                        <li><strong>File (Archivo)</strong>: Crear, abrir, guardar archivos o carpetas y salir del editor.</li>
+                        <li><strong>Edit (Editar)</strong>: Acciones comunes como cortar, copiar, pegar, deshacer y buscar/reemplazar texto.</li>
+                        <li><strong>View (Vista)</strong>: Mostrar/ocultar paneles como el explorador, terminal, extensiones o depurador.</li>
+                        <li><strong>Go (Ir)</strong>: Navegar entre archivos, líneas de código, funciones o símbolos en tu proyecto.</li>
+                        <li><strong>Run (Ejecutar)</strong>: Iniciar y gestionar la ejecución o depuración de tu código.</li>
+                        <li><strong>Terminal</strong>: Abre una terminal integrada para ejecutar comandos sin salir del editor.</li>
+                        <li><strong>Help (Ayuda)</strong>: Acceso a documentación, tutoriales y detalles de la versión de VS Code.</li>
+                    </ul>
+                </td>
+                <!-- Imagen a la derecha -->
+                <td style="text-align: center; vertical-align: top;">
+                    <img src="img/10.png" alt="Imagen de ejemplo" style="max-width: 200px; height: auto;"/>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p><strong>Barra Lateral Izquierda (Herramientas principales):</strong></p>
+    <table>
+        </tbody>
+                <tr>
+                <!-- Información de la lista a la izquierda -->
+                <td style="text-align: left; vertical-align: top; padding-right: 20px;">
+                    <ul>
+                        <li><strong>Explorer (Carpeta)</strong>: Administra y abre los archivos y carpetas de tu proyecto.</li>
+                        <li><strong>Search (Lupa)</strong>: Busca texto en todos los archivos del proyecto y realiza reemplazos.</li>
+                        <li><strong>Source Control (Git)</strong>: Gestiona repositorios Git (commits, ramas, etc.).</li>
+                        <li><strong>Run and Debug (Reproducir + Bug)</strong>: Depura y ejecuta aplicaciones configuradas en tu proyecto.</li>
+                        <li><strong>Extensions (Bloque)</strong>: Instala y gestiona extensiones para lenguajes o herramientas adicionales.</li>
+                    </ul>
+                </td>
+                <!-- Imagen a la derecha -->
+                <td style="text-align: center; vertical-align: top;">
+            <img src="img/10.png" alt="Imagen de ejemplo" style="max-width: 200px; height: auto;"/>
+                </td>
+                </tr>
+        </tbody>
+    </table>
+
+    <h2>NetBeans</h2>
+    <h3>Instalación</h3>
+    <ol>
+        <li>Acceder al enlace de descarga: <a href="https://netbeans.apache.org/download/index.html">NetBeans Apache</a></li>
+        <img src="img/11.png" alt="Imagen de ejemplo" />
+        <li>Descargar la última versión acorde al Sistema Operativo, actualmente es la 23.</li>
+        <img src="img/12.png" alt="Imagen de ejemplo" />
+        <li>Seleccionar el proveedor de descarga.</li>
+        <img src="img/13.png" alt="Imagen de ejemplo" />
+        <li>Ejecutar el instalador: La instalación por defecto incluye las características básicas de Java SE, Java Enterprise Edition, Html/Javascript y Php. Puedes personalizar las opciones.</li>
+        <img src="img/14.png" alt="Imagen de ejemplo" />
+        <img src="img/15.png" alt="Imagen de ejemplo" />
+        <li>Aceptar términos de licencia.</li>
+        <img src="img/16.png" alt="Imagen de ejemplo" />
+        <li>Seleccionar ubicación y versión del JDK.</li>
+        <img src="img/17.png" alt="Imagen de ejemplo" />
+        <li>Haz clic en Install para iniciar la instalación.</li>
+        <img src="img/18.png" alt="Imagen de ejemplo" />
+    </ol>
+
+    <h3>Configuración Inicial</h3>
+    <table>
+    </tbody>
+            <tr>
+            <!-- Información de la lista a la izquierda -->
+            <td style="text-align: left; vertical-align: top; padding-right: 20px;">
+                <ul>
+                    <li><strong>New Project</strong>: Crear un proyecto nuevo (Java, PHP, etc.).</li>
+                    <li><strong>Open Project</strong>: Abrir un proyecto existente.</li>
+                    <li><strong>New File</strong>: Crear un archivo nuevo (clases, interfaces, etc.).</li>
+                    <li><strong>Open File</strong>: Abrir un archivo existente en el proyecto.</li>
+                    <li><strong>Go to File</strong>: Buscar un archivo dentro del proyecto.</li>
+                    <li><strong>Show Dashboard</strong>: Mostrar un panel con información de proyectos.</li>
+                </ul>
+            </td>
+            <!-- Imagen a la derecha -->
+            <td style="text-align: center; vertical-align: top;">
+        <img src="img/19.png" alt="Imagen de ejemplo" style="max-width: 200px; height: auto;"/>
+            </td>
+            </tr>
+    </tbody>
+    </table>
+    <p><strong>Incidencia 1:</strong> El JDK es un conjunto de herramientas de desarrollo de software necesarias para construir aplicaciones Java. NetBeans IDE depende del JDK para funcionar correctamente. El mensaje de error indica que el JDK no está instalado en la computadora o que el instalador no puede encontrarlo.</p>
+    <img src="img/20.png" alt="Imagen de ejemplo"  />
+    <p><strong>Solución:</strong> Para solucionar este problema, debes descargar e instalar el JDK 8 o una versión más reciente desde el sitio web de Oracle. Una vez que el JDK esté instalado, puedes volver a ejecutar el instalador de NetBeans IDE <a href="https://www.oracle.com/java/technologies/downloads/?er=221886#jdk23-windows"> JDK Development.</a></p>
+
+    <h2>IntelliJ IDEA</h2>
+    <h3>Instalación</h3>
+    <ol>
+        <li>Vaya a este enlace para obtener el software IntelliJ, haga clic en la opción Descargar<a href="https://www.jetbrains.com/idea/"> Software IntelliJ.</a></li>
+        <img src="img/21.png" alt="Imagen de ejemplo"  />
+        <li>Ejecutar el instalador.</li>
+        <img src="img/22.png" alt="Imagen de ejemplo"  />
+        <li>Puedes cambiar la ubicación de la carpeta de instalación o mantener la configuración predeterminada. Haz clic en Next para continuar.</li>
+        <img src="img/23.png" alt="Imagen de ejemplo"  />
+        <table>
+        </tbody>
+                <tr>
+                <!-- Información de la lista a la izquierda -->
+                <td style="text-align: left; vertical-align: top; padding-right: 20px;">
+                    <ul>
+                        <li><strong>Create Desktop Shortcut</strong>: Crea un acceso directo en el escritorio para abrir IntelliJ IDEA fácilmente.</li>
+                        <li><strong>Update PATH Variable</strong>: Permite usar IntelliJ desde la terminal con comandos.</li>
+                        <li><strong>Update Context Menu</strong>: Agrega la opción "Abrir carpeta como proyecto" al menú contextual al hacer clic derecho.</li>
+                        <li><strong>Create Associations</strong>: Asocia tipos de archivos como .java, .kt, .gradle, etc., para que se abran automáticamente con IntelliJ IDEA.</li>
+                    </ul>
+                </td>
+                <!-- Imagen a la derecha -->
+                <td style="text-align: center; vertical-align: top;">
+            <img src="img/24.png" alt="Imagen de ejemplo" style="max-width: 200px; height: auto;"/>
+                </td>
+                </tr>
+        </tbody>
+        </table>
+        <li>El instalador solicita al usuario que elija una carpeta en el menú de inicio de Windows donde se almacenarán los accesos directos al programa.</li>
+        <img src="img/25.png" alt="Imagen de ejemplo"  />
+    </ol>
+
+    <h3>Configuración Inicial</h3>
+    <table>
+    </tbody>
+            <tr>
+            <!-- Información de la lista a la izquierda -->
+            <td style="text-align: left; vertical-align: top; padding-right: 20px;">
+                <ul>
+                    <li><strong>Projects</strong>: Crear o abrir un proyecto existente.</li>
+                    <li><strong>Remote Development</strong>: Conectarse a un entorno remoto (SSH, WSL, Dev Containers).</li>
+                    <li><strong>Customize</strong>: Personaliza las configuraciones de IntelliJ IDEA.</li>
+                    <li><strong>Plugins</strong>: Gestionar los plugins instalados.</li>
+                    <li><strong>Learn</strong>: Acceder a la documentación y recursos de aprendizaje.</li>
+                </ul>
+            </td>
+            <!-- Imagen a la derecha -->
+            <td style="text-align: center; vertical-align: top;">
+        <img src="img/26.png" alt="Imagen de ejemplo" style="max-width: 200px; height: auto;"/>
+            </td>
+            </tr>
+    </tbody>
+    </table>
+
+    <h2>Eclipse</h2>
+    <h3>Instalación</h3>
+    <ol>
+        <li>Accede a <a href="https://www.eclipse.org/">Eclipse</a> y haz clic en "Descargar 64 bits".</li>
+        <img src="img/27.png" alt="Imagen de ejemplo"  />
+        <li>Haz clic en el archivo “eclipse-inst-win64.exe” para iniciar la instalación.</li>
+        <img src="img/28.png" alt="Imagen de ejemplo"  />
+        <li>Selecciona "Eclipse IDE para Java Desarrolladores", puedes cambiar las rutas de instalación o dejarlas predeterminadas.</li>
+        <img src="img/29.png" alt="Imagen de ejemplo"  />
+        <li>Acepta los términos de licencia y haz clic en Install.</li>
+        <img src="img/30.png" alt="Imagen de ejemplo"  />
+    </ol>
+
+    <h3>Configuración Inicial</h3>
+    <p>Ya podrás iniciar el Launcher y comenzar a usar Eclipse para tus proyectos Java.</p>
+    <img src="img/31.png" alt="Imagen de ejemplo"  />
+    <img src="img/32.png" alt="Imagen de ejemplo"  />
+
+    <div class="footer">
+        <p>&copy; 2024 Todos los derechos reservados para. &copy; Eclipse Foundation AISBL, The Apache Software Foundation, JetBrains s.r.o.</p>
+    </div>
+</div>
+</body>
+</html>
