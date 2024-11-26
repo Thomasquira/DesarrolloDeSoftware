@@ -41,7 +41,6 @@
     background: #D0E4F5 url("binario.gif") repeat scroll 0 0;
 }
 
-
 body {
     font-family: 'Arial', sans-serif;
     /* Fuente principal */
@@ -78,10 +77,9 @@ h3 {
     /* Verde llamativo */
     margin-bottom: 10px;
     border: 5px solid #246420;
-    border-radius: 40px 40px 40px 40px;
     display: inline-block;
     margin: 10px 0;
-    padding: 10px;
+    padding: 5px;
 }
 
 
