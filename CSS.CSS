@@ -181,7 +181,6 @@ img:hover{
    transform: translateY(-5px);
 }
 
-
 @media (max-width: 600px){
     body {
         padding: 10px;
