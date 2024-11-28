@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo y estilo general de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    /* Fondo claro */
+    color: #333;
+    /* Color de texto general */
+    padding: 20px;
+    opacity: 0;
+    /* Comienza invisible */
+    transition: opacity 1s ease-in-out;
+    /* Animación de desvanecimiento suave */
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+#results-container {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#correct-answers {
+    color: green;
+}
+
+#incorrect-answers {
+    color: red;
+}
+
+#unanswered-questions {
+    color: gray;
+}
+
+/* Estilo del título principal */
+h1 {
+    font-family: 'Arial', sans-serif;
+    color: #248820;
+    /* Blanco */
+    background: linear-gradient(to right, #2e8b57, #388e3c);
+    /* Gradiente de verde */
+    -webkit-background-clip: text;
+    /* Hace que el fondo de gradiente se aplique solo al texto */
+    background-clip: text;
+    font-size: 3rem;
+    /* Tamaño grande */
+    font-weight: bold;
+    /* Negrita */
+    text-align: center;
+    /* Centrado */
+    text-transform: uppercase;
+    /* Texto en mayúsculas */
+    letter-spacing: 3px;
+    /* Espaciado entre letras */
+    padding: 20px 0;
+    /* Espaciado arriba y abajo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra sutil */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    margin-bottom: 30px;
+    /* Separación con otros elementos */
+    transform: scale(1.1);
+    /* Efecto de agrandamiento */
+    transition: transform 0.3s ease-in-out;
+    /* Transición suave */
+}
+
+/* Estilo del formulario */
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    /* Fondo blanco para el formulario */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de las preguntas */
+p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Estilo de las opciones de respuestas */
+label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Color de texto por defecto */
+input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #2e8b57;
+    /* Radio button verde */
+}
+
+/* Cambios de color al pasar el cursor por encima de las opciones */
+label:hover {
+    color: #388e3c;
+    /* Verde más intenso */
+}
+
+/* Resaltar la opción seleccionada */
+input[type="radio"]:checked+label {
+    color: #388e3c;
+    font-weight: bold;
+}
+
+/* Resaltar las preguntas correctas con un fondo verde */
+input[type="radio"]:checked+label {
+    background-color: #c8e6c9;
+    /* Fondo verde claro */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Estilo para los botones de opción de respuesta */
+input[type="radio"]:focus {
+    outline: none;
+}
+
+/* Estilo para los divs de las preguntas */
+div {
+    margin-bottom: 20px;
+}
+
+/* Estilo de los enlaces */
+a {
+    color: #2e8b57;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el contenedor del formulario */
+form div {
+    margin-bottom: 20px;
+}
