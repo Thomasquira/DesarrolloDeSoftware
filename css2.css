@@ -11,6 +11,12 @@ body {
     flex-direction: column;
 }
 
+.logo img {
+    max-width: 100%; /* la imagen no se salga del contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+    max-height: 50px;
+}
+
 h1, h2, h3, ol, ul, p {
     text-align: justify;
     margin: 15px 0;
