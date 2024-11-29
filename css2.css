@@ -118,6 +118,7 @@ table td img {
 }
 
 .navbar a {
+    border-radius: 60px;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
