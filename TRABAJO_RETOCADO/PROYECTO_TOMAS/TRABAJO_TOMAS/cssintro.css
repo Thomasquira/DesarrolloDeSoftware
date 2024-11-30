@@ -139,7 +139,7 @@ section img:hover {
 }
 
 .background-image {
-    background-image: url('Imagenes/tec.jpg');
+    background-image: url('Imagenes1/etapas\ desarrollo\ de\ software.jpg') ;
     background-size: cover;
     background-position: center;
     position: fixed;

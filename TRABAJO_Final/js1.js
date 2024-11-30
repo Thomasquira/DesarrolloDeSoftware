@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const documentHeight = document.documentElement.scrollHeight;
         const windowHeight = window.innerHeight;
 
-        // Cambiar el umbral de activación, por ejemplo cuando el scroll pase el 80% de la altura del documento
-        if (scrollPosition > documentHeight - windowHeight - 1200) {
+        // Cambiar el umbral de activación.
+        if (scrollPosition > documentHeight - windowHeight - 300) {
             // Mostrar el botón añadiendo la clase 'show'
             scrollToTopBtn.classList.add('show');
         } else {

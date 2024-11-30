@@ -24,7 +24,7 @@ body {
 }
 .navbar .links {
     display: flex; /* Agrupar los enlaces */
-    gap: 10px; /* Espacio entre los enlaces */
+    gap: 5px; /* Espacio entre los enlaces */
 }
 .navbar a {
     color: white;
@@ -75,7 +75,7 @@ body {
 }
 
 .background-image {
-  background-image: url('Imagenes/5-etapas-del-proceso-de-desarrollo-de-software.jpg') ;
+  background-image: url('Imagenes1/etapas\ desarrollo\ de\ software.jpg') ;
   background-size: cover;
   background-position: center;
   position: fixed;

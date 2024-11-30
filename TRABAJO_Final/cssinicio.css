@@ -50,7 +50,7 @@ h1 {
 .navbar .links {
     display: flex;
     /* Agrupar los enlaces */
-    gap: 10px;
+    gap: 5px;
     /* Espacio entre los enlaces */
 }
 
@@ -78,7 +78,7 @@ h1 {
 section {
     display: flex;
     max-width: 950px;
-    height: 500px;
+    height: 400px;
     overflow: hidden;
     /* Esto asegura que las imágenes no se salgan del contenedor */
     align-items: center;
@@ -139,7 +139,7 @@ section img:hover {
 }
 
 .background-image {
-    background-image: url('Imagenes/tec.jpg');
+    background-image: url('Imagenes1/tec.jpg');
     background-size: cover;
     background-position: center;
     position: fixed;
