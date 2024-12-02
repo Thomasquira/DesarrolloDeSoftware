@@ -29,8 +29,60 @@ document.addEventListener('DOMContentLoaded', function () {
             question5: 'b',
             question6: 'b',
             question7: 'c',
-            question8: 'b'
-          
+            question8: 'b',
+            question9: 'b',
+            question10: 'b',
+            question11: 'b',
+            question12: 'a',
+            question13: 'b',
+            question14: 'a',
+            question15: 'b',
+            question16: 'c',
+            question17: 'b',
+            question18: 'b',
+            question19: 'c',
+            question20: 'b',
+            question21: 'b',
+            question22: 'b',
+            question23: 'b',
+            question24: 'c',
+            question25: 'b',
+            question26: 'b',
+            question27: 'a',
+            question28: 'b',
+            question29: 'b',
+            question30: 'b',
+            question31: 'c',
+            question32: 'b',
+            question33: 'a',
+            question34: 'b',
+            question35: 'b',
+            question36: 'b',
+            question37: 'c',
+            question38: 'b',
+            question39: 'b',
+            question40: 'c',
+            question41: 'b',
+            question42: 'b',
+            question43: 'b',
+            question44: 'c',
+            question45: 'b',
+            question46: 'b',
+            question47: 'b',
+            question48: 'c',
+            question49: 'b',
+            question50: 'b',
+            question51: 'b',
+            question52: 'b',
+            question53: 'b',
+            question54: 'b',
+            question55: 'b',
+            question56: 'b',
+            question57: 'b',
+            question58: 'b',
+            question59: 'b',
+            question60: 'b'
+
         };
 
         // Contadores de respuestas
@@ -39,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let unanswered = 0;
 
         // Recorrer todas las preguntas
-        for (let i = 1; i <= 9; i++) {
+        for (let i = 1; i <= 60; i++) {
             let question = 'question' + i;
             let selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
             let questionDiv = document.querySelector(`div:nth-of-type(${i})`);
@@ -58,11 +110,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 unanswered++;
             }
         }
-        /* Si tienes mas de cinco fallos, te sale una imagen, (de coña) */
-        if (incorrect > 5) {
-            const imageContainer = document.getElementById('image-container');
-            imageContainer.style.display = 'block'; // Mostrar el contenedor de la imagen
-        }
+
 
 
         // Mostrar los resultados
