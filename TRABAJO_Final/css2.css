@@ -220,6 +220,26 @@ a {
 .content {
     margin-top: 60px; /* Deja espacio en la parte superior para que no quede cubierto por la barra */
 }
+img{
+    max-width: 200px;
+    height: auto;
+    float: center;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4pxx rgba(0, 0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    width: 200px;
+    height: 150px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    
+}
+
+img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+ }
 
 /* Diseño para pantallas pequeñas o que varian su tamaño */
 @media (max-width: 768px) {
@@ -236,6 +256,11 @@ a {
         font-size: 0.7rem; /* Hace los enlaces más pequeños */
         padding: 4px; /* Reduce el relleno dentro de los enlaces */
         margin: 0 13px; /* Reduce el espacio entre los enlaces */
+    }
+    img {
+        float: none;
+        display: block;
+        margin: 10px auto;
     }
 
     section {

@@ -71,6 +71,27 @@ img {
     border-radius: 5px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
+.navbar img{
+    max-width: 200px;
+    height: auto;
+    float: center;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4pxx rgba(0, 0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    width: 200px;
+    height: 150px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    
+}
+
+img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+ }
+
 
 table {
     width: 100%; 
@@ -193,4 +214,31 @@ table td img {
 .footer p {
     margin: 0; 
     font-size: 14px; 
+}
+
+/* Diseño para pantallas pequeñas o que varian su tamaño */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem; /* Disminuye el tamaño de la fuente en pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 2rem; /* Reduce el tamaño del encabezado en pantallas pequeñas */
+    }
+
+    /* Ajusta el tamaño y espaciado de los enlaces en la barra de navegación */
+    .navbar a {
+        font-size: 0.7rem; /* Hace los enlaces más pequeños */
+        padding: 4px; /* Reduce el relleno dentro de los enlaces */
+        margin: 0 13px; /* Reduce el espacio entre los enlaces */
+    }
+    img {
+        float: none;
+        display: block;
+        margin: 10px auto;
+    }
+
+    section {
+        padding: 15px; /* Reduce el relleno interno de las secciones en pantallas pequeñas */
+    }
 }
