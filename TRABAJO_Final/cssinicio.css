@@ -1,0 +1,260 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    line-height: 1.8;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #2c3e50;
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+h1 {
+    text-align: center;
+    background: linear-gradient(to right, #4CAF50, #1e88e5);
+    /* Degradado */
+    color: white;
+    padding: 20px 0;
+    margin: 0;
+    font-size: 2.5rem;
+
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #4CAF50, #1e88e5);
+    /* Degradado */
+    background-color: rgba(28, 110, 164, 0.71);
+    padding: 3px 0;
+    z-index: 1000;
+    display: flex;
+    /* Hacer la barra de navegación un contenedor flexible */
+    justify-content: space-between;
+    /* Espacia los elementos */
+    align-items: center;
+    /* Alinea verticalmente los elementos */
+}
+
+.navbar .links {
+    display: flex;
+    /* Agrupar los enlaces */
+    gap: 5px;
+    /* Espacio entre los enlaces */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background-color: #ffffff;
+}
+
+.navbar .logo img {
+    height: 40px;
+    /* Ajusta el tamaño del logo */
+    width: auto;
+}
+
+.content {
+    margin-top: 60px;
+}
+
+section {
+    display: flex;
+    max-width: 950px;
+    height: 400px;
+    overflow: hidden;
+    align-items: stretch; 
+}
+
+section a {
+    position: relative; 
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+section img {
+    width: 100%; 
+    height: 400px; 
+    object-fit: cover;
+    opacity: 0.9;
+    transition: 0.5s ease;
+}
+
+.page-title {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px; 
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 80%; 
+    max-width: 300px; 
+}
+
+section a:hover .page-title {
+    opacity: 1;
+}
+
+section a:hover img {
+    transform: scale(1.1); /* Añadido para efecto de zoom */
+}
+
+.logo img {
+    max-width: 200px;
+    height: auto;
+    float: center;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4pxx rgba(0, 0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    width: 200px;
+    height: 150px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 550px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.background-image {
+    background-image: url('Imagenes1/tec.jpg');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: o;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+}
+
+/* Estilos del botón flotante */
+.scrollToTopBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    padding: 10px 20px;
+    font-size: 30px;
+    background: linear-gradient(to right, #4CAF50, #1e88e5);
+    /* Degradado */
+    background-color: rgba(28, 110, 164, 0.71);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0;
+    /* Inicialmente oculto */
+    visibility: hidden;
+    /* Inicialmente oculto */
+    transform: scale(0.8);
+    /* Comienza con un tamaño más pequeño */
+    transition: opacity 0.5s ease, visibility 0s 0.5s, transform 0.5s ease;
+    /* Transición suave */
+}
+
+.scrollToTopBtn.show {
+    opacity: 1;
+    /* Opacidad completa cuando está visible */
+    visibility: visible;
+    /* Hacerlo visible */
+    transform: scale(1);
+    /* Escala normal cuando está visible */
+    transition: opacity 0.5s ease, visibility 0s 0s, transform 0.5s ease;
+    /* Transición de visibilidad */
+}
+
+.scrollToTopBtn:hover {
+    background-color: #3498db;
+    transform: scale(1.1);
+    /* Aumenta el tamaño al pasar el ratón por encima */
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        flex-direction: column; /* Cambia a columna para apilar los elementos */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        max-width: 100%; /* Asegura que el ancho sea completo en pantallas pequeñas */
+    }
+
+    section img {
+        width: 100%;
+        /* Hace que cada imagen ocupe el 100% del ancho del contenedor */
+        height: auto;
+        /* Ajusta la altura automáticamente para mantener la proporción */
+    }
+    section a {
+        width: 100%; /* Asegura que cada enlace ocupe todo el ancho disponible */
+        margin-bottom: 20px; /* Espacio entre los enlaces */
+        position: relative; /* Necesario para el posicionamiento del título */
+    }
+
+    section img:hover {
+        width: 100%;
+        /* Asegura que al hacer hover la imagen no se expanda más allá del contenedor */
+        opacity: 1;
+        filter: contrast(120%);
+    }
+    .page-title {
+        position: static; /* Cambia a posición estática para fluir con el contenido */
+        opacity: 1; /* Asegura que el texto sea visible */
+        background-color: #2c3e50; /* Fondo del título */
+        color: #ecf0f1; /* Color del texto */
+        padding: 15px; /* Espaciado interno */
+        font-size: 18px; /* Tamaño de fuente */
+        width: 100%; /* Ancho completo */
+        max-width: none; /* Sin límite de ancho máximo */
+        border-radius: 0; /* Sin bordes redondeados */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra para un efecto elevado */
+        margin-top: 10px; /* Espacio entre la imagen y el título */
+    }
+
+
+    section a:hover img {
+        transform: none;
+    }
+}
