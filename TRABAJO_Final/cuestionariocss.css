@@ -22,6 +22,7 @@
     /* Envía el fondo detrás del contenido */
 }
 
+
 body {
     font-family: Arial, sans-serif;
     color: #333;
@@ -213,4 +214,89 @@ a:hover {
 /* Estilo para el contenedor del formulario */
 form div {
     margin-bottom: 20px;
+}
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Menos espacio alrededor */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Reducir el tamaño del título */
+        letter-spacing: 2px; /* Reducir el espaciado entre letras */
+        transform: scale(1); /* Quitar el efecto de agrandamiento */
+        padding: 15px 0; /* Ajustar el espacio del título */
+    }
+
+    /* Estilo para el formulario */
+    form {
+        padding: 15px; /* Reducir el espacio de relleno en el formulario */
+    }
+
+    /* Estilo de las preguntas */
+    p {
+        font-size: 1rem; /* Reducir el tamaño de la fuente */
+        margin-bottom: 10px; /* Menos espacio entre las preguntas */
+    }
+
+    /* Estilo de las opciones de respuestas */
+    label {
+        font-size: 0.9rem; /* Reducir el tamaño de las opciones */
+        margin: 8px 0; /* Menos espacio entre las opciones */
+    }
+
+    /* Resaltar la opción seleccionada */
+    input[type="radio"]:checked+label {
+        background-color: #c8e6c9; /* Fondo verde claro */
+        padding: 4px; /* Menos espacio de relleno */
+        border-radius: 5px;
+    }
+
+    /* Estilo para los divs de las preguntas */
+    div {
+        margin-bottom: 15px; /* Menos espacio entre las preguntas */
+    }
+
+    /* Estilo del contenedor de resultados */
+    #results-container {
+        padding: 15px; /* Menos relleno en los resultados */
+        margin-top: 15px;
+    }
+
+    /* Estilo del botón de corrección */
+    #correccion-respuesta {
+        font-size: 14px; /* Reducir tamaño de la fuente */
+        padding: 10px 20px; /* Menos espacio en los bordes */
+    }
+
+    /* Ajustes en el fondo */
+    .background {
+        filter: blur(3px); /* Menos desenfoque para no afectar tanto la visibilidad */
+    }
+}
+
+/* Estilos para pantallas muy pequeñas (por ejemplo, teléfonos en modo vertical) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem; /* Reducir aún más el tamaño del título */
+        letter-spacing: 1px; /* Aún menos espaciado entre letras */
+    }
+
+    form {
+        padding: 10px; /* Reducir más el espacio en el formulario */
+    }
+
+    p {
+        font-size: 0.9rem; /* Ajustar aún más el tamaño de la fuente */
+    }
+
+    label {
+        font-size: 0.8rem; /* Reducir el tamaño de las opciones */
+    }
+
+    /* Estilo para los botones de corrección */
+    #correccion-respuesta {
+        font-size: 12px; /* Fuente aún más pequeña */
+        padding: 8px 16px; /* Relleno más pequeño */
+    }
 }
