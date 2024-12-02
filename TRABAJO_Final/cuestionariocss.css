@@ -1,7 +1,11 @@
 * {
+    /* Estilo general para todos los elementos */
     margin: 0;
+    /* Elimina el margen por defecto */
     padding: 0;
+    /* Elimina el relleno por defecto */
     box-sizing: border-box;
+    /* Elimina el relleno y margen por defecto */
 }
 
 /* Animación para que el fondo aparezca de manera progresiva al iniciar la pagina*/
@@ -9,13 +13,19 @@
     position: fixed;
     /* Fija la imagen en el fondo */
     top: 0;
+    /* Alinea la imagen al inicio */
     left: 0;
+    /* Alinea la imagen al inicio */
     width: 100%;
+    /* Ocupa todo el ancho de la pantalla */
     height: 100%;
+    /* Ocupa todo el alto de la pantalla */
     background-image: url("Imagenes3/fondocuestionario.jpg");
+    /* Imagen de fondo */
     background-size: cover;
     /* Ajusta la imagen al fondo */
     background-position: center;
+    /* Centra la imagen */
     filter: blur(5px);
     /* Aplica el desenfoque */
     z-index: -1;
@@ -25,30 +35,43 @@
 
 body {
     font-family: Arial, sans-serif;
+    /* Define la fuente para el texto */
     color: #333;
+    /* Color de texto */
     padding: 20px;
+    /* Espacio alrededor del contenido */
     opacity: 1;
+    /* Inicialmente el contenido está visible */
     transition: opacity 1s ease-in-out;
+    /* Animación para el cambio de visibilidad */
 }
 
 body.loaded {
     opacity: 1;
+    /* El contenido está visible */
 }
 
 #correccion-respuesta {
     background-color: #4CAF50;
     /* Verde */
     color: white;
+    /* Color de texto */
     font-size: 16px;
+    /* Tamaño de la fuente */
     padding: 12px 24px;
+    /* Relleno alrededor del texto */
     border: none;
+    /* Elimina el borde por defecto */
     border-radius: 8px;
     /* Bordes redondeados */
     cursor: pointer;
+    /* Muestra el cursor de puntero */
     transition: all 0.3s ease;
     /* Animación suave para cambios */
     text-align: center;
+    /* Centra el texto */
     font-weight: bold;
+    /* Negrita */
 }
 
 /* Efecto hover: cambio de color al pasar el mouse */
@@ -73,11 +96,11 @@ body.loaded {
 }
 
 .correct-answer {
-    background-color: #28a745;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #28a745; /* Verde */
+    border-radius: 8px;        /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     /* Verde */
-    color: white;
+    color: white;              /* Color de texto */
 }
 
 /* Estilo para las respuestas incorrectas */
@@ -89,22 +112,22 @@ body.loaded {
     color: white;
 }
 
-#results-container {
+#results-container {         /* Estilo del contenedor de resultados */
     margin-top: 20px;
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 8px;
 }
 
-#correct-answers {
+#correct-answers {           /* Estilo para los correctos */
     color: green;
 }
 
-#incorrect-answers {
+#incorrect-answers {         /* Estilo para los incorrectos */
     color: red;
 }
 
-#unanswered-questions {
+#unanswered-questions {      /* Estilo para las preguntas sin respuesta */
     color: gray;
 }
 
@@ -138,9 +161,10 @@ h1 {
     background-color: rgba(255, 255, 255, 0.4);
 
 }
+
 /* Estilo del formulario */
 form {
-    max-width: 800px;
+    max-width: 800px; 
     margin: 0 auto;
     background-color: #ffffff;
     /* Fondo blanco para el formulario */
@@ -216,8 +240,9 @@ form div {
     margin-bottom: 20px;
 }
 
-#restart-quiz {
-    background-color: #f44336; /* Rojo */
+#restart-quiz {              /* Estilo para el botón de reinicio */
+    background-color: #f44336;
+    /* Rojo */
     color: white;
     font-size: 16px;
     padding: 12px 24px;
@@ -226,19 +251,21 @@ form div {
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: bold;
-    margin-top: 20px; /* Separación del contenido previo */
+    margin-top: 20px;
+    /* Separación del contenido previo */
 }
 
-#restart-quiz:hover {
-    background-color: #d32f2f; /* Rojo más oscuro */
+#restart-quiz:hover {        /* Estilo para el botón de reinicio al pasar el ratón */
+    background-color: #d32f2f;
+    /* Rojo más oscuro */
 }
 
-#restart-quiz:focus {
-    outline: none;
+#restart-quiz:focus {        /* Estilo para el botón de reinicio al pasar el ratón */
+    outline: none; 
     box-shadow: 0 0 10px rgba(211, 47, 47, 0.5);
 }
 
-#restart-quiz:active {
+#restart-quiz:active {       /* Estilo para el botón de reinicio al pulsar */
     background-color: #b71c1c;
     transform: scale(0.98);
 }
@@ -246,85 +273,109 @@ form div {
 /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
     body {
-        padding: 10px; /* Menos espacio alrededor */
+        padding: 10px;
+        /* Menos espacio alrededor */
     }
 
     h1 {
-        font-size: 2.5rem; /* Reducir el tamaño del título */
-        letter-spacing: 2px; /* Reducir el espaciado entre letras */
-        transform: scale(1); /* Quitar el efecto de agrandamiento */
-        padding: 15px 0; /* Ajustar el espacio del título */
+        font-size: 2.5rem;
+        /* Reducir el tamaño del título */
+        letter-spacing: 2px;
+        /* Reducir el espaciado entre letras */
+        transform: scale(1);
+        /* Quitar el efecto de agrandamiento */
+        padding: 15px 0;
+        /* Ajustar el espacio del título */
     }
 
     /* Estilo para el formulario */
     form {
-        padding: 15px; /* Reducir el espacio de relleno en el formulario */
+        padding: 15px;
+        /* Reducir el espacio de relleno en el formulario */
     }
 
     /* Estilo de las preguntas */
     p {
-        font-size: 1rem; /* Reducir el tamaño de la fuente */
-        margin-bottom: 10px; /* Menos espacio entre las preguntas */
+        font-size: 1rem;
+        /* Reducir el tamaño de la fuente */
+        margin-bottom: 10px;
+        /* Menos espacio entre las preguntas */
     }
 
     /* Estilo de las opciones de respuestas */
     label {
-        font-size: 0.9rem; /* Reducir el tamaño de las opciones */
-        margin: 8px 0; /* Menos espacio entre las opciones */
+        font-size: 0.9rem;
+        /* Reducir el tamaño de las opciones */
+        margin: 8px 0;
+        /* Menos espacio entre las opciones */
     }
 
     /* Resaltar la opción seleccionada */
     input[type="radio"]:checked+label {
-        background-color: #c8e6c9; /* Fondo verde claro */
-        padding: 4px; /* Menos espacio de relleno */
+        background-color: #c8e6c9;
+        /* Fondo verde claro */
+        padding: 4px;
+        /* Menos espacio de relleno */
         border-radius: 5px;
     }
 
     /* Estilo para los divs de las preguntas */
     div {
-        margin-bottom: 15px; /* Menos espacio entre las preguntas */
+        margin-bottom: 15px;
+        /* Menos espacio entre las preguntas */
     }
 
     /* Estilo del contenedor de resultados */
     #results-container {
-        padding: 15px; /* Menos relleno en los resultados */
+        padding: 15px;
+        /* Menos relleno en los resultados */
         margin-top: 15px;
     }
 
     /* Estilo del botón de corrección */
     #correccion-respuesta {
-        font-size: 14px; /* Reducir tamaño de la fuente */
-        padding: 10px 20px; /* Menos espacio en los bordes */
+        font-size: 14px;
+        /* Reducir tamaño de la fuente */
+        padding: 10px 20px;
+        /* Menos espacio en los bordes */
     }
 
     /* Ajustes en el fondo */
     .background {
-        filter: blur(3px); /* Menos desenfoque para no afectar tanto la visibilidad */
+        filter: blur(3px);
+        /* Menos desenfoque para no afectar tanto la visibilidad */
     }
 }
 
 /* Estilos para pantallas muy pequeñas (por ejemplo, teléfonos en modo vertical) */
 @media (max-width: 480px) {
     h1 {
-        font-size: 2rem; /* Reducir aún más el tamaño del título */
-        letter-spacing: 1px; /* Aún menos espaciado entre letras */
+        font-size: 2rem;
+        /* Reducir aún más el tamaño del título */
+        letter-spacing: 1px;
+        /* Aún menos espaciado entre letras */
     }
 
     form {
-        padding: 10px; /* Reducir más el espacio en el formulario */
+        padding: 10px;
+        /* Reducir más el espacio en el formulario */
     }
 
     p {
-        font-size: 0.9rem; /* Ajustar aún más el tamaño de la fuente */
+        font-size: 0.9rem;
+        /* Ajustar aún más el tamaño de la fuente */
     }
 
     label {
-        font-size: 0.8rem; /* Reducir el tamaño de las opciones */
+        font-size: 0.8rem;
+        /* Reducir el tamaño de las opciones */
     }
 
     /* Estilo para los botones de corrección */
     #correccion-respuesta {
-        font-size: 12px; /* Fuente aún más pequeña */
-        padding: 8px 16px; /* Relleno más pequeño */
+        font-size: 12px;
+        /* Fuente aún más pequeña */
+        padding: 8px 16px;
+        /* Relleno más pequeño */
     }
 }

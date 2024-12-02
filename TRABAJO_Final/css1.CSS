@@ -1,54 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-body {
-    font-family: 'Roboto',  Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    line-height: 1.8;
+body { /* Estilo general para el cuerpo del documento */
+    font-family: 'Roboto',  Arial, sans-serif; /* Fuente de Roboto */
+    line-height: 1.6; /* Ajusta la línea de texto */
+    color: #333; /* Color de texto */
+    max-width: 1000px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenido */
+    padding: 20px; /* Espacio alrededor del contenido */
+    background-color: #f9f9f9; /* Fondo blanco */
+    line-height: 1.8; /* Ajusta la línea de texto */
 }
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+.navbar { /* Estilo para la barra de navegación */
+    position: fixed; /* Fija la barra de navegación */
+    top: 0; /* Alinea la barra de navegación al inicio */
+    left: 0;  /* Alinea la barra de navegación al inicio */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
     background: linear-gradient(to right, #4CAF50, #1e88e5); /* Degradado */
     background-color: rgba(28,110,164,0.71);
     padding: 3px 0;
-    z-index: 1000; 
+    z-index: 1000;  /* Hace que la barra de navegación esté por encima de otros elementos */
     display: flex; /* Hacer la barra de navegación un contenedor flexible */
     justify-content: space-between; /* Espacia los elementos */
     align-items: center; /* Alinea verticalmente los elementos */
 }
-.navbar .links {
+.navbar .links { /* Estilo para los enlaces de la barra de navegación */
     display: flex; /* Agrupar los enlaces */
     gap: 5px; /* Espacio entre los enlaces */
 }
-.navbar a {
+.navbar a { /* Estilo para los enlaces de la barra de navegación */
     color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    padding: 10px;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    margin: 0 15px; /* Añade margen horizontal a los enlaces */
+    padding: 10px; /* Añade padding alrededor de los enlaces */
 }
-.navbar a:hover {
-    background-color: #ffffff;
+.navbar a:hover { /* Estilo para los enlaces de la barra de navegación al pasar el ratón */
+    background-color: #ffffff; /* Fondo blanco */
 }
-.navbar .logo img {
+.navbar .logo img { /* Estilo para el logo de la barra de navegación */
     height: 40px; /* Ajusta el tamaño del logo */
-    width: auto;
+    width: auto; /* Mantiene la proporción del logo */
 }
-.content {
+.content { /* Estilo para el contenido principal */
     margin-top: 60px; 
 }
 
 /* Estilos del botón flotante */
 .scrollToTopBtn {
-    position: fixed;
-    bottom: 40px;
-    right: 30px;
-    padding: 10px 20px;
+    position: fixed; /* Fija el botón en la parte inferior derecha */
+    bottom: 40px;    /* Alinea el botón 40px desde el fondo */
+    right: 30px;     /* Alinea el botón 30px desde la derecha */
+    padding: 10px 20px; /* Padding dentro del botón */
     font-size: 30px;
     background: linear-gradient(to right, #4CAF50, #1e88e5); /* Degradado */
     background-color: rgba(28,110,164,0.71);
@@ -62,19 +62,19 @@ body {
     transition: opacity 0.5s ease, visibility 0s 0.5s, transform 0.5s ease; /* Transición suave */
 }
 
-.scrollToTopBtn.show {
+.scrollToTopBtn.show { /* Estilo para el botón flotante cuando está visible */
     opacity: 1; /* Opacidad completa cuando está visible */
     visibility: visible; /* Hacerlo visible */
     transform: scale(1); /* Escala normal cuando está visible */
     transition: opacity 0.5s ease, visibility 0s 0s, transform 0.5s ease; /* Transición de visibilidad */
 }
 
-.scrollToTopBtn:hover {
+.scrollToTopBtn:hover { /* Estilo para el botón flotante al pasar el ratón */
     background-color: #3498db;
     transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón por encima */
 }
 
-.background-image {
+.background-image { /* Estilo para el fondo de la página */
   background-image: url('Imagenes1/etapas\ desarrollo\ de\ software.jpg') ;
   background-size: cover;
   background-position: center;
@@ -86,23 +86,23 @@ body {
   z-index: -1;
 }
 
-.content{
+.content{ /* Estilo para el contenido principal */
     max-width: 1000px; 
     margin: 60px auto; 
     padding: 20px;
     background-color: rgba(255, 255, 255, 1); 
-    border-radius: 8px; 
+    border-radius: 8px;  /* Bordes redondeados */
 }
 
-p, ul, ol {
+p, ul, ol { /* Estilo para párrafos, listas y listas ordenadas */
     max-width: 70ch;
 }
 
-ul {
+ul { /* Estilo para listas */
     list-style-type: none;
 }
 
-ul li::before {
+ul li::before { /* Estilo para los puntos de listas */
     content: "•";
     color: #3498db;
     display: inline-block;
@@ -110,13 +110,13 @@ ul li::before {
     margin-left: -1em;
 }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4{ /* Estilo para los títulos de página */
     color: #2c3e50;
     margin-top: 30px;
     font-weight: 700;
 }
 
-h1 {
+h1 { /* Estilo para el título principal */
     text-align: center;
     background: linear-gradient(to right, #4CAF50, #1e88e5); /* Degradado */
     color: white;
@@ -125,28 +125,28 @@ h1 {
     font-size: 2.5rem;
 
 }
-h2{
+h2{ /* Estilo para el título secundario */
     font-size: 2em;
 }
-h3 {
+h3 { /* Estilo para el título terciario */
     font-size: 1.5em;
 }
-h4 {
+h4 { /* Estilo para el título cuarto */
   font-size: 1.2em;
 }
 
-p {
+p { /* Estilo para párrafos */
     margin-bottom: 20px;
 }
-ul, ol {
+ul, ol { /* Estilo para listas */
     margin-bottom: 20px;
     padding-left: 20px;
 }
-li {
+li { /* Estilo para los elementos de listas */
     margin-bottom: 10px;
 }
 
-a{
+a{  /* Estilo para los enlaces */
     color: #3498db;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -154,13 +154,13 @@ a{
     transition: border-bottom 0.3s ease;
 
 }
-a:hover {
+a:hover { /* Estilo para los enlaces al pasar el ratón */
     color: #2980b9;
     border-bottom-color:#3498db;
 }
 
 
-img{
+img{ /* Estilo para imágenes */
     max-width: 200px;
     height: auto;
     float: center;
@@ -175,14 +175,14 @@ img{
     
 }
 
-img:hover{
+img:hover{ /* Estilo para imágenes al pasar el ratón */
    transform: scale(1.05);
    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
    transform: translateY(-5px);
 }
 
 
-@media (max-width: 600px){
+@media (max-width: 600px){ /* Estilos para pantallas pequeñas */
     body {
         padding: 10px;
         font-size: 16px;
