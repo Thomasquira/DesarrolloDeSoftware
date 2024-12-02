@@ -22,15 +22,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Respuestas correctas definidas
         const correctAnswers = {
-            question1: 'c',
+            question1: 'a',
             question2: 'b',
-            question3: 'c',
+            question3: 'a',
             question4: 'c',
             question5: 'b',
-            question6: 'c',
+            question6: 'b',
             question7: 'c',
-            question8: 'c',
-            question9: 'b'
+            question8: 'b'
+          
         };
 
         // Contadores de respuestas
