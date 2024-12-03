@@ -94,12 +94,38 @@ body { /* Estilo general para el cuerpo del documento */
     border-radius: 8px;  /* Bordes redondeados */
 }
 
+/* Contenedor del iframe */
+.video-container {
+    background: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 80%;  /* Ancho por defecto */
+    max-width: 800px; /* Ancho máximo */
+}
+
+/* Estilo del iframe */
+iframe {
+    width: 100%; /* Hace que el iframe se ajuste al contenedor */
+    height: 350px; /* Altura fija para el video */
+    border-radius: 10px;
+}
+
 p, ul, ol { /* Estilo para párrafos, listas y listas ordenadas */
     max-width: 70ch;
 }
 
 ul { /* Estilo para listas */
     list-style-type: none;
+}
+
+p img {
+    height: 60%;
+    width: 50%;
+    max-width: none; /* Anula el max-width de las imágenes generales */
+    float: none; /* Anula el float de las imágenes generales */
+    margin: 10px auto; /* Centra la imagen horizontalmente */
+    display: block; /* Asegura que la imagen se comporte como un bloque */
 }
 
 ul li::before { /* Estilo para los puntos de listas */
@@ -166,7 +192,7 @@ img{ /* Estilo para imágenes */
     float: center;
     margin: 10px;
     border-radius: 5px;
-    box-shadow: 0 2px 4pxx rgba(0, 0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     object-fit: cover;
     width: 200px;
