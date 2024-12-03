@@ -409,6 +409,94 @@
                 <img src="Imagenes3/208.png" alt="Imagen de ejemplo" />
             </ol>
             <br>
+            <br>
+            <h2>Generar ejecutables y ejecutar desde terminal</h2>
+            <br>   
+    <table>
+        <thead>
+            <tr>
+                <th>IDE</th>
+                <th>Generar ejecutables</th>
+                <th>Ejecutar desde terminal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Eclipse</strong></td>
+                <td>
+                    <ol>
+                        <li>Crea tu proyecto Java en Eclipse.</li>
+                        <li>Ve al menú <strong>File > Export</strong>.</li>
+                        <li>Selecciona <strong>Java > Runnable JAR File</strong> y haz clic en <strong>Next</strong>.</li>
+                        <li>Escoge el archivo principal (main class) de tu proyecto.</li>
+                        <li>Define la ubicación y el nombre del archivo JAR.</li>
+                        <li>Haz clic en <strong>Finish</strong>.</li>
+                    </ol>
+                </td>
+                <td>
+                    <ol>
+                        <li>Abre la terminal y navega a la carpeta donde se encuentra el archivo JAR.</li>
+                        <li>Escribe el comando: <code>java -jar nombreArchivo.jar</code> y presiona <strong>Enter</strong>.</li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>NetBeans</strong></td>
+                <td>
+                    <ol>
+                        <li>Abre tu proyecto en NetBeans.</li>
+                        <li>Ve a <strong>Run > Clean and Build Project</strong> (o presiona <strong>Shift+F11</strong>).</li>
+                        <li>NetBeans generará un archivo JAR en la carpeta <code>dist</code> dentro del proyecto.</li>
+                    </ol>
+                </td>
+                <td>
+                    <ol>
+                        <li>Abre la terminal y navega a la carpeta <code>dist</code>.</li>
+                        <li>Escribe el comando: <code>java -jar nombreArchivo.jar</code> y presiona <strong>Enter</strong>.</li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>IntelliJ IDEA</strong></td>
+                <td>
+                    <ol>
+                        <li>Abre tu proyecto en IntelliJ IDEA.</li>
+                        <li>Ve a <strong>File > Project Structure > Artifacts</strong>.</li>
+                        <li>Haz clic en el botón <strong>+</strong> y selecciona <strong>JAR > From modules with dependencies</strong>.</li>
+                        <li>Configura el nombre del archivo y la clase principal.</li>
+                        <li>Haz clic en <strong>Apply</strong> y luego en <strong>OK</strong>.</li>
+                        <li>Ve a <strong>Build > Build Artifacts</strong> y selecciona <strong>Build</strong>.</li>
+                    </ol>
+                </td>
+                <td>
+                    <ol>
+                        <li>Abre la terminal y navega a la carpeta donde se generó el archivo JAR.</li>
+                        <li>Escribe el comando: <code>java -jar nombreArchivo.jar</code> y presiona <strong>Enter</strong>.</li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Visual Studio Code (VS Code)</strong></td>
+                <td>
+                    <ol>
+                        <li>Asegúrate de tener configurado el entorno de Java y las extensiones necesarias.</li>
+                        <li>Compila tu archivo <code>.java</code> desde la terminal integrada usando el comando:  
+                            <code>javac NombreArchivo.java</code>.</li>
+                        <li>Esto generará un archivo <code>.class</code>.</li>
+                    </ol>
+                </td>
+                <td>
+                    <ol>
+                        <li>En la terminal integrada o externa, navega al directorio del archivo compilado.</li>
+                        <li>Ejecuta el archivo con el comando:  
+                            <code>java NombreArchivo</code>.</li>
+                    </ol>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+        <br>
+        <br>
         <h2>Asegúrate de que el proyecto sea compatible</h2>
         <ol>
             <li>Antes de exportar, verifica que tu proyecto en NetBeans esté configurado de manera estándar (como un proyecto Java con estructura común). Eclipse y NetBeans usan formatos diferentes para almacenar configuraciones del proyecto, por lo que algunas cosas (como bibliotecas externas o configuraciones específicas) podrían necesitar ajustes manuales.</li>
