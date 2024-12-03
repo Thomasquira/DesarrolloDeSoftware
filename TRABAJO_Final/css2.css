@@ -446,7 +446,8 @@ a {
     width: auto;
     /* El ancho del logo se ajusta automáticamente segun el tamaño de la ventana */
     transition: box-shadow 0.3s ease, transform 0.3s ease;
-
+    border-radius: 5px;
+    
 }
 
 .logo img:hover {
