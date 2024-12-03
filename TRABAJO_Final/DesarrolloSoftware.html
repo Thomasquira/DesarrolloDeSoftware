@@ -1,0 +1,525 @@
+<!DOCTYPE html> <!-- Define el tipo de documento como HTML5 -->
+<html lang="es"> <!-- Contenido de la página esta en español. -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres UTF-8 para admitir caracteres especiales. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Permite que la página se vea bien en dispositivos móviles. -->
+    <title>Desarrollo de Software</title> <!-- Título que aparecerá en la pestaña del navegador. -->
+    <link rel="stylesheet" href="css2.css"> <!-- Vincula una hoja de estilos externa. -->
+    <script src="js2.js"></script> <!-- Vincula un archivo de JavaScript externo. -->
+</head>
+
+<div id="body"> <!-- Contenedor principal del cuerpo de la página -->
+
+    <div class="navbar"> <!-- Barra de navegación -->
+        <div class="links"> <!-- Contenedor de los enlaces de navegación -->
+            <a href="index.html">Inicio</a>
+            <a href="D.A.M.html">D.A.M</a> <!-- Enlazar pagina inicio -->
+            <a href="DesarrolloSoftware.html">Desarollo de Software</a> <!-- Enlazar pagina desarrollo software -->
+            <a href="Ides.html">IDES: Instalación y configuración</a><!-- Enlazar pagina IDES -->
+        </div>
+        <div class="logo"> <!-- Contenedor del logo -->
+            <img src="Imagenes2/logo.png" alt="Logo Tech Nexus Inc"> <!-- Introducción logo pagina -->
+        </div>
+    </div>
+
+    <h2></h2>
+    <h1>Desarrollo De Software</h1>
+    <section> <!-- Sección para el concepto de software -->
+
+        <h2>Concepto de Software</h2> <!-- Definición general de software y explicación -->
+        <p>El <strong>software</strong> es el conjunto de programas, aplicaciones y datos que permiten a una computadora
+            o
+            dispositivo realizar tareas específicas, mientras que el <strong>Hardware</strong>, es el conjunto de
+            componentes
+            físicos y tangibles que forman un dispositivo electrónico, como computadoras, teléfonos móviles o
+            electrodomésticos.
+            Incluye elementos como el procesador (CPU), la memoria RAM, el disco duro, la placa base, etc..</p>
+        <p>En esto tenemos el <strong>Software de aplicación</strong>, que son los programas diseñados para realizar
+            tareas
+            específicas para el usuario, como procesadores de texto, navegadores web, aplicaciones de diseño,
+            juegos, etc. Luego tendríamos el <strong>Software de sistema</strong> que incluye los programas que permiten
+            que el
+            hardware funcione correctamente, como los sistemas operativos (por ejemplo, Windows, macOS, Linux),
+            controladores de dispositivos, y utilidades del sistema, y por último el <strong>Software de
+                desarrollo</strong> que son
+            las herramientas que permiten a los programadores crear otros programas, como lenguajes de programación
+            (Java, Python, C++) y entornos de desarrollo integrados (IDEs). </p>
+        <p>
+            El hardware se clasifica en tres tipos principales. El <strong>hardware interno</strong> incluye componentes
+            como el
+            procesador (CPU), memoria RAM, disco duro o SSD, placa base y tarjetas de expansión, esenciales para el
+            funcionamiento interno del sistema. El <strong>hardware externo</strong> abarca dispositivos periféricos de
+            entrada (teclado,
+            ratón), salida (monitor, impresora) y entrada/salida (pantallas táctiles, discos externos) que permiten la
+            interacción con el usuario. Por último, el <strong>hardware de comunicación</strong> incluye tarjetas de
+            red, routers, módems
+            y switches, que facilitan la conexión con otros dispositivos y redes.</p>
+        <img id="miImagen2" src="imagenes2/Hardwareysoftware.jpg" alt="Imagen del software y hardware">
+
+        <div id="info-card"> <!-- Contenedor principal que agrupa el resumen del concepto. -->
+            <span class="highlight"><strong><u>Resumen</u></strong></span>
+            <!-- Texto destacado y subrayado del resumen. -->
+            <div class="tooltip" id="tooltip1">
+                <!-- Contenedor para el resumen del contenido con estilo de "tooltip". -->
+                Tanto el software como el hardware son esenciales para el funcionamiento de los dispositivos
+                electrónicos, ya que da
+                instrucciones precisas sobre cómo debe ejecutarse cada operación o proceso.
+            </div>
+        </div>
+        <p class="source">FUENTE: <a href="https://chatgpt.com/" target="_blank">https://chatgpt.com/</a></p>
+        <!-- Fuente utilizada para la información -->
+    </section>
+
+    <section> <!-- Sección de Conceptos de Código Fuente, Código Objeto y Código Ejecutable  -->
+        <h2>Conceptos de Código Fuente, código Objeto, código Ejecutable y tipos de traductores.</h2>
+        <br>
+        <!-- Explicación Código fuente -->
+        <p>El <strong>código fuente</strong> es el conjunto de instrucciones escritas por el programador en un lenguaje
+            de programación
+            de alto nivel, como C++, Java o Python. Este código es comprensible por los seres humanos, pero no puede ser
+            ejecutado directamente por la computadora. Para que el código fuente funcione, debe ser traducido a un
+            formato que la máquina pueda entender. </p>
+        <br>
+        <p>El <strong>código objeto</strong> es el resultado de compilar parcialmente el código
+            fuente. Es una representación en lenguaje de bajo nivel o código máquina, que aún no está completamente
+            listo para ser ejecutado, ya que puede requerir enlaces adicionales.</p>
+        <br>
+        <p>El <strong>código ejecutable</strong> es el producto final de la compilación y el enlace; es un archivo
+            binario que la
+            computadora puede ejecutar directamente, ya que está completamente traducido a instrucciones específicas de
+            la arquitectura de la máquina.</p>
+        <br>
+        <div class="recuadro">
+            <h4>Para convertir el código fuente en código ejecutable, se utilizan diferentes tipos de traductores:</h4>
+            <br>
+            <li>Un <strong>compilador</strong> traduce todo el código fuente a código objeto en una sola pasada,
+                generando
+                un archivo independiente y optimizado.</li>
+            <br>
+            <li>Un <strong>intérprete</strong> traduce y ejecuta el código línea por línea sin
+                generar archivos intermedios, lo que permite una ejecución más dinámica pero menos eficiente.</li>
+            <br>
+            <li>Un <strong>ensamblador</strong> traduce el código fuente escrito en lenguaje ensamblador a código
+                objeto, utilizando instrucciones de bajo nivel específicas para la máquina en cuestión.</li>
+        </div>
+
+
+        <div id="info-card"> <!-- Resumen de los conceptos de código. -->
+            <span class="highlight"><strong><u>Resumen</u></strong></span>
+            <!-- Texto destacado y subrayado del título. -->
+            <div class="tooltip" id="tooltip2">
+                <!-- Contenedor para el resumen del contenido con estilo de "tooltip". -->
+                El código fuente es escrito por programadores en un editor de texto usando un lenguaje de
+                programación de alto nivel los cuales contienen instrucciones para que la computadora implemente
+                el algoritmo.
+                Es importante crear un algoritmo en pseudocódigo antes de la codificación.
+                El código objeto es un código intermedio no directamente ejecutable, obtenido mediante un
+                compilador.
+                El código ejecutable es un código máquina generado al enlazar archivos de código objeto.
+
+            </div>
+        </div>
+
+        <p class="source">FUENTE: <a
+                href="https://sarreplec.caib.es/pluginfile.php/11297/mod_resource/content/10/ED01_Contenidos_Web/72_clasificacin_de_los_lenguajes_de_programacin.html"
+                target="_blank">Clasificación de lenguajes</a></p> <!-- Fuente utilizada para la información -->
+    </section>
+
+    <section> <!-- Sección sobre lenguajes de programación. -->
+        <h2>Clasificación de los lenguajes de programación</h2>
+        <div class="recuadro2">
+            <h3>1. Lenguajes de bajo nivel</h3>
+            <br>
+            <p><strong>En este apartado tenemos dos tipos de lenguajes:</strong></p>
+            <br>
+            <p>
+                <li><strong>Lenguaje máquina</strong>
+                    Este lenguaje de programación es el más antiguo que existe. El lenguaje máquina es el único que
+                    comprenden los ordenadores. Cualquier código redactado mediante lenguajes alternativos debe ser
+                    convertido a lenguaje máquina para que un ordenador pueda leerlo.
+
+                    El lenguaje máquina se basa en el código binario, es decir, se escribe a base de <strong>0 y
+                        1</strong>.Aprender
+                    lenguaje
+                    máquina es algo muy complejo y no es útil para la creación de programas o webs. Es por esto que se
+                    han
+                    creado los demás lenguajes de bajo nivel, para poder redactar código de manera sencilla que puede
+                    ser
+                    convertido en lenguaje máquina a través de un ensamblador.</li>
+                <br>
+                <li><strong>Lenguaje ensamblador</strong>
+                    Los lenguajes de bajo nivel están muy relacionados con el lenguaje máquina. Ambos tipos de lenguaje
+                    tienen como objetivo ser comprendidos por un ordenador. La única diferencia es que los lenguajes
+                    ensambladores están hechos para ser escritos por humanos de manera sencilla. Pese a esto, tiene que
+                    ser
+                    traducido por un programa conocido como Ensamblador para que los ordenadores puedan comprenderlo.
+
+                    En definitiva, el lenguajes ensamblador tiene las mismas funciones que el lenguajes máquina, pero
+                    está
+                    diseñado para poder ser escrito y comprendido con facilidad por los humanos. Los códigos son mucho
+                    más
+                    cortos e intuitivos y, además, tienden a ocupar mucho menos memoria. </li>
+            </p>
+        </div>
+        <br>
+        <div class="recuadro2">
+            <h3>2. Lenguajes de medio nivel</h3>
+            <br>
+            <p>
+                <li> Los lenguajes de nivel medio tienden a ser clasificados como lenguajes de bajo nivel porque siguen
+                    dependiendo de ensambladores para poder ser comprendidos por los ordenadores. Pese a esto, permiten
+                    llevar a cabo tareas mucho más complejas que los lenguajes de bajo nivel como el uso de funciones.
+                    Aun
+                    así, muchas tareas deben ser llevadas a cabo de manera manual, aunque hay que destacar que permiten
+                    los
+                    algoritmos de búsqueda y ordenamiento a diferencia de otros lenguajes de alto nivel.
+
+                    En ese sentido, los lenguajes de medio nivel están orientados hacia la programación de sistemas, por
+                    lo
+                    que no son adecuados para tareas como el diseño web. Los lenguajes de medio nivel más conocidos son
+                    C y
+                    C++. </li>
+            </p>
+
+        </div>
+        <br>
+        <div class="recuadro2">
+            <h3>3. Lenguajes de alto nivel</h3>
+            <br>
+            <p>
+                <li>Los lenguajes de alto nivel son los más adaptados al lenguaje humano, por lo que son los más
+                    sencillos de
+                    aprender en términos generales. Como los de medio nivel, tienen que ser traducidos a lenguaje
+                    máquina
+                    para poder ser ejecutados por un ordenador. Pese a esto, debido a las modificaciones del lenguaje en
+                    relación al código máquina, los ensambladores no son útiles para esto. Los lenguajes de alto nivel
+                    se
+                    adaptan al código máquina a través de traductores y compiladores, dependiendo de si se requiere una
+                    ejecución más rápida o menos. </li>
+            </p>
+            <br>
+            <p>
+                <li>Actualmente, la gran mayoría de lenguajes de programación existentes son de alto nivel, a excepción
+                    de C y C++. A continuación te dejamos los lenguajes de programación más utilizados que existen y una
+                    breve explicación de sus usos.</li>
+            </p>
+
+        </div>
+        <br>
+        <div class="recuadro2">
+            <h3>Lenguajes de programación</h3>
+            <br>
+            <p>
+                <li><strong>C:</strong> Es el lenguaje de nivel medio más usado.</li>
+                <br>
+                <li><strong>C++:</strong>Es una variante del lenguaje C, con un mayor nivel de desarrollo.</li>
+                <br>
+                <li><strong>Java:</strong> Es el lenguaje más utilizado a nivel global debido a tres factores: su
+                    solidez, facilidad de aprendizaje y redacción, y el respaldo de una comunidad muy extensa.</li>
+                <br>
+                <li><strong>Python:</strong> Python es un lenguaje relativamente moderno y diseñado para ser de
+                    propósito general. Puede ser usado para prácticamente cualquier tarea que requiera un lenguaje de
+                    programación.</li>
+                <br>
+                <li><strong>JavaScript:</strong> Como es de suponer, es una variación del lenguaje Java, y está diseñado
+                    para ser utilizado en el ámbito del diseño web.</li>
+                <br>
+                <li><strong>Visual Basic:</strong> Es un lenguaje desarrollado para Microsoft, y tiene como objetivo
+                    permitir la creación de aplicaciones orientadas a Windows.</li>
+                <br>
+                <li><strong>Go:</strong> Go es el lenguaje de programación de Google, y está desarrollado para ser una
+                    mezcla de diferentes lenguajes: tiene una sintaxis muy similar a C, busca ser multiusos como Python
+                    pero con un rendimiento similar al de C++.</li>
+                <br>
+                <li><strong>Ruby:</strong> Ruby es un lenguaje de programación orientado a objetos. Es un lenguaje muy
+                    intuitivo (aunque difícil de aprender) y que evita la duplicidad de código.</li>
+                <br>
+                <li><strong>PHP:</strong> PHP es un lenguaje orientado hacia el diseño Backend de páginas web.</li>
+                <br>
+                <li><strong>SQL:</strong> SQL es un lenguaje diseñado para facilitar la administración de diferentes
+                    bases de datos.</li>
+
+            </p>
+        </div>
+        <br>
+        <div id="info-card"> <!-- Resumen de los conceptos de código. -->
+            <span class="highlight"><strong><u>Resumen</u></strong></span>
+            <!-- Texto destacado y subrayado del título. -->
+            <div class="tooltip" id="tooltip2">
+                <!-- Contenedor para el resumen del contenido con estilo de "tooltip". -->
+                JavaScript, HTML y CSS son fundamentales en internet. Python se destaca por su legibilidad y es
+                usado en sitios como Spotify e Instagram. Java está presente en dispositivos varios, como móviles y
+                centros de datos. C surge de Microsoft y está en la plataforma .NET. SQL es esencial para consultas
+                en bases de datos, como MySQL..
+            </div>
+        </div>
+
+        <p class="source">FUENTE: <a href="https://assemblerinstitute.com/blog/tipos-lenguaje-programacion/"
+                target="_blank">assemblerinstitute</a></p> <!-- Fuente utilizada -->
+    </section>
+
+    <section> <!-- Sección que explica cómo se obtiene un código ejecutable a partir de un codigo fuente -->
+        <h2>Proceso de Obtención de Código Ejecutable a Partir de Código Fuente</h2>
+        <p>El proceso de crear un código ejecutable a partir de un código fuente involucra varias etapas:</p>
+
+        <ol> <!-- Lista ordenada de pasos -->
+            <li>Escritura del código en un lenguaje de programación de alto nivel (como C, Java o Python).</li>
+            <!-- Primer paso: escritura del código -->
+            <li>En el caso de lenguajes compilados (como C o C++), el código fuente se compila con un compilador como
+                <code>gcc</code> o <code>javac</code>.
+            </li> <!-- Segundo paso: uso de un compilador -->
+            <li>El compilador realiza varias fases como el preprocesamiento, análisis léxico, análisis sintáctico,
+                generación de código intermedio, optimización y generación de código objeto.</li>
+            <!-- Tercer paso: proceso dentro del compilador -->
+            <li>El enlazador combina los archivos objeto generados por el compilador y resuelve las dependencias de
+                funciones y bibliotecas externas, generando el archivo ejecutable final.</li>
+            <!-- Cuarto paso: proceso de enlace -->
+            <li>El sistema operativo carga el archivo ejecutable en la memoria y lo ejecuta.</li>
+            <!-- Quinto paso: ejecución -->
+        </ol>
+
+        <p>El archivo ejecutable resultante puede tener diferentes extensiones dependiendo del sistema operativo,
+            como <code>.exe</code> en Windows o <code>.bin</code> y <code>.elf</code> en sistemas Unix.</p>
+        <!-- Información adicional con codes para resaltar textos -->
+        <div id="info-card"> <!-- Resumen de los conceptos de código. -->
+            <span class="highlight"><strong><u>Resumen</u></strong></span>
+            <!-- Texto destacado y subrayado del título. -->
+            <div class="tooltip" id="tooltip3">
+                <!-- Contenedor para el resumen del contenido con estilo de "tooltip". -->
+                El proceso de crear un código ejecutable incluye escribir en un lenguaje de programación, compilar
+                con un compilador, enlazar archivos objeto, cargar en memoria y ejecutar en el sistema operativo.
+            </div>
+        </div>
+        <p class="source">FUENTE: <a href="https://chatgpt.com/" target="_blank">https://chatgpt.com/</a></p>
+        <!-- Fuente utilizada -->
+    </section>
+
+    <section> <!-- Sección para explicar las máquinas virtuales -->
+        <h2>Concepto de Máquina Virtual y su Utilidad</h2>
+        <p>Una máquina virtual (VM) es un ordenador que opera completamente a través de software en lugar de
+            hardware físico. Las máquinas virtuales imitan la operación de un sistema operativo o un ordenador
+            diferente utilizando software en un ordenador físico.</p> <!-- Definición de máquina virtual -->
+        <p>Un solo ordenador puede tener varias máquinas virtuales con sistemas operativos diferentes y funciones
+            independientes. Esto permite, por ejemplo, ejecutar un sistema macOS en un ordenador con Windows o
+            viceversa.</p> <!-- Explicación de la funcionalidad de las máquinas virtuales -->
+        <p>Las máquinas virtuales son útiles para empresas y desarrolladores al disminuir costos y mejorar el
+            funcionamiento de la red, especialmente al ofrecer software en la nube o garantizar la protección de
+            servidores. También son una herramienta útil para diseñadores, desarrolladores y testers que necesitan
+            probar software en diferentes entornos sin adquirir hardware adicional.</p>
+        <br>
+        <img id="miImagen" src="imagenes2/compilador.jpg" alt="Imagen del compilador">
+        <br>
+        <div class="recuadro2">
+            <h3>Máquina virtual Java</h3>
+
+            <p>
+            <p><strong>Proceso de ejecución de un programa Java:</strong></p>
+            <br>
+            <li><strong>1. Código fuente (source code):</strong> Un programa Java comienza como un archivo de texto plano
+                con extensión
+                .java. Este código está escrito en el lenguaje de programación Java.
+                Compilación (compilation): El compilador de Java (javac) toma este código fuente y lo convierte en
+                un
+                conjunto de instrucciones intermedias llamadas bytecodes, que se almacenan en archivos con extensión
+                .class.
+            </li>
+            <br>
+            <li><strong>2. Ejecución en la JVM:</strong> La JVM es responsable de leer estos bytecodes y ejecutarlos. Lo
+                hace mediante
+                un
+                proceso llamado interpretación y, en algunas JVMs modernas, también compilación just-in-time (JIT),
+                que
+                convierte los bytecodes en código máquina específico para el sistema operativo y la arquitectura de
+                hardware donde se está ejecutando el programa.
+            </li>
+            </p>
+
+        </div>
+
+        <div id="info-card"> <!-- Resumen de las ventajas de maquinas virtuales. -->
+            <span class="highlight"><strong><u>Resumen</u></strong></span>
+            <!-- Texto destacado y subrayado del título. -->
+            <div class="tooltip" id="tooltip4">
+                <!-- Contenedor para el resumen del contenido con estilo de "tooltip". -->
+                Una máquina virtual es un ordenador que funciona a través de software en lugar de hardware físico,
+                imitando sistemas operativos diferentes en un solo ordenador. Son útiles para reducir costos y
+                mejorar el funcionamiento de la red, permitiendo ejecutar sistemas diferentes en un mismo equipo.
+                Ayudan a empresas, desarrolladores y testers a probar software sin necesidad de hardware adicional.
+            </div>
+        </div>
+        <p class="source">FUENTE: <a
+                href="https://www.avast.com/es-es/c-virtual-machine#:~:text=%C2%BFQu%C3%A9%20es%20una%20m%C3%A1quina%20virtual%3F"
+                target="_blank">Avast</a></p> <!-- Fuente utilizada -->
+    </section>
+
+    <section> <!-- Sección para la razón de ser de la ingeniería de software. -->
+        <h2>Razón de ser de la ingeniería de software</h2>
+        <p> <!-- Párrafo explicativo sobre el origen de la ingeniería de software. -->
+            La ingeniería de software surgió como una solución para abordar los problemas que enfrentaban los proyectos
+            de
+            desarrollo de software a gran escala. Antes de su formalización, era común que los proyectos se excedieran
+            en
+            los plazos de entrega, los presupuestos o no cumplieran con los estándares esperados de calidad.
+            Esto generaba una crisis en la industria tecnológica, conocida como la "crisis del software", donde la
+            demanda
+            de sistemas complejos superaba la capacidad para desarrollarlos de manera efectiva.
+        </p>
+        <p> <!-- Otro párrafo que amplía la importancia de la ingeniería de software. -->
+            La importancia de la ingeniería de software radica en que no solo se centra en la programación, sino también
+            en
+            la gestión y optimización de todo el ciclo de vida del software. Este ciclo incluye actividades como la
+            planificación,
+            el análisis de requisitos, el diseño, la implementación, las pruebas y el mantenimiento. Al aplicar
+            principios de
+            ingeniería, se busca garantizar que el software sea fiable, eficiente, escalable y fácil de mantener,
+            adaptándose
+            a las necesidades de los usuarios y a los cambios tecnológicos.
+        </p>
+    </section>
+
+    <section> <!-- Lista sobre las etapas del desarrollo de una aplicación informática. -->
+        <h2>Fases del desarrollo de una aplicación informática</h2>
+        <p> <!-- Resumen de la importancia de las fases. -->
+            El desarrollo de software sigue un conjunto de fases bien definidas que permiten organizar el trabajo de manera
+            sistemática, mejorar la calidad del producto final y reducir riesgos como el incumplimiento de los requisitos
+            o la generación de errores críticos.
+            Fases principales:
+        </p>
+        <ul> <!-- Lista para las fases. -->
+            <li><strong>Análisis de Requisitos:</strong> En esta fase se identifican las necesidades específicas de los
+                usuarios y
+                del cliente. Es fundamental para definir qué funciones debe cumplir el software y establecer los límites
+                del
+                proyecto.</li>
+            <li><strong>Diseño:</strong> Se desarrolla una planificación detallada que abarca desde la arquitectura del
+                sistema hasta
+                las interfaces de usuario. Se decide cómo se conectarán los componentes y se prioriza la escalabilidad y
+                la facilidad de mantenimiento.</li>
+            <li><strong>Codificación:</strong> Aquí los desarrolladores escriben el código que implementa el diseño
+                establecido. Se
+                utilizan lenguajes de programación y herramientas específicas para dar vida al software.</li>
+            <li><strong>Pruebas:</strong> El software es sometido a pruebas exhaustivas para verificar que cumple con
+                los requisitos
+                y que no contiene errores graves. Esto incluye pruebas unitarias, de integración, de sistema y de
+                aceptación.</li>
+            <li><strong>Documentación:</strong> Se crean manuales de usuario, guías técnicas y documentación interna que facilitan la comprensión
+                    del sistema tanto para los usuarios como para el equipo de desarrollo.</li>
+            <li><strong>Mantenimiento:</strong> Una vez entregado el software, es necesario realizar ajustes, 
+                resolver errores detectados en el uso real, y adaptarlo a cambios en los requisitos o en el entorno tecnológico. 
+                El mantenimiento asegura la funcionalidad y longevidad del producto.</li>
+        </ul>
+        <img id="miImagen2" src="imagenes2/fasesdesarrollo.png" alt="Imagen del software y hardware">
+    </section>
+
+    <section> <!-- Lista sobre los perfiles del desarrollo de software. -->
+        <h2>Perfiles que Intervienen en el Desarrollo de Software</h2>
+        <p> <!-- Breve introducción a los perfiles del desarrollo de software. -->
+            El desarrollo de software involucra a distintas personas con diferentes perfiles. 
+            Cada perfil contribuye de manera única a las distintas fases del proyecto, 
+            desde el análisis inicial hasta la entrega y el mantenimiento del producto. 
+            Diferentes perfiles que intervienen en el proceso:
+        </p>
+    <ul>
+        <li><strong>Analista de Sistemas:</strong> Se encarga de analizar y definir los requisitos funcionales y técnicos 
+            del sistema en base a las necesidades del cliente o usuario final. Documenta de forma detallada los procesos y especificaciones,
+            sirviendo como puente de comunicación entre el cliente y el equipo de desarrollo.</li>  
+        <li><strong>Diseñador de Software:</strong> Diseña la arquitectura del sistema, estableciendo cómo los diferentes componentes interactuarán entre sí. 
+            Define el flujo de datos, la estructura del software y selecciona las tecnologías más adecuadas para garantizar que el sistema sea eficiente, escalable y fácil de mantener.</li>  
+        <li><strong>Desarrollador:</strong> Es el encargado de programar el software, escribiendo y depurando el código fuente. 
+            Trabaja para implementar las funcionalidades requeridas, integrar los distintos módulos y corregir errores que puedan surgir durante el desarrollo. 
+            También participa en el mantenimiento y actualización del software una vez entregado.</li>  
+        <li><strong>Tester/QA:</strong> Realiza pruebas exhaustivas para garantizar que el software funcione correctamente y cumpla con los requisitos especificados. 
+            Identifica errores, inconsistencias o posibles mejoras, asegurando así la calidad y la experiencia del usuario antes de la entrega final.</li>  
+        <li><strong>Administrador de Bases de Datos:</strong> Gestiona las bases de datos del sistema, asegurando su correcto funcionamiento, integridad y seguridad. 
+            Es responsable de optimizar consultas, realizar copias de seguridad y garantizar la disponibilidad de los datos en todo momento.</li>  
+        <li><strong>Especialista en Seguridad:</strong> Se enfoca en proteger el software frente a vulnerabilidades y amenazas externas. 
+            Implementa medidas de seguridad, realiza auditorías y pruebas para garantizar que el sistema sea robusto frente a posibles ataques.</li>  
+        <li><strong>Usuarios:</strong> Son las personas que utilizarán el software en su día a día. Su feedback es crucial durante todo el 
+            ciclo de desarrollo para ajustar funcionalidades, mejorar la usabilidad y asegurar que el producto cumpla con sus expectativas y necesidades reales.</li>     
+    </ul>
+    <img id="miImagen2" src="imagenes2/perfilesdesarrollo.png" alt="Imagen del software y hardware">
+    </section>
+    
+    <section> <!-- Sección de modelos de ciclo del software. -->
+        <h2>Modelos de ciclo de vida del software</h2>
+        <p> <!-- Resumen de la importancia de los modelos. -->
+            Los modelos de ciclo de vida del software proporcionan una estructura para planificar, organizar y controlar el proceso de desarrollo. 
+            Elegir el modelo adecuado depende de factores como la claridad de los requisitos, la complejidad del proyecto y la necesidad de adaptabilidad.
+        </p>
+        <ul>
+            <li><strong>Modelo en Cascada:</strong> Uso: Proyectos con requisitos claros y bien definidos desde el inicio. 
+                Importancia: Es el modelo más básico y establece una estructura sencilla y secuencial para el desarrollo. 
+                Ventajas: Simplicidad y claridad en el proceso, ideal para proyectos pequeños y bien entendidos. 
+                Limitaciones: Dificultad para adaptarse a cambios en los requisitos.
+            </li>
+            <li><strong>Modelo Incremental:</strong> Uso: Proyectos que requieren entregas funcionales tempranas y retroalimentación continua. 
+                Importancia: Introduce modularidad y permite desarrollar software usable más rápidamente. 
+                Ventajas: Reducción del riesgo al dividir el trabajo en partes más pequeñas. 
+                Limitaciones: Puede ser complejo integrar módulos si no se planifica bien.
+            </li>
+            <li><strong>Modelo Ágil:</strong> Uso: Proyectos donde los requisitos son inciertos o cambian con frecuencia. 
+                Importancia: Es el enfoque más popular en la industria actual debido a su flexibilidad y enfoque colaborativo. 
+                Ventajas: Incrementos funcionales rápidos, retroalimentación continua, y adaptación a cambios. 
+                Limitaciones: Requiere alta comunicación y compromiso constante del equipo y cliente.
+            </li>
+            <li><strong>Modelo DevOps:</strong> Uso: Proyectos que requieren una integración continua de desarrollo y operaciones para acelerar la entrega. 
+                Importancia: Es crucial para empresas que desean mantener un flujo continuo de entrega y retroalimentación. 
+                Ventajas: Automatización, colaboración mejorada y ciclos de entrega más rápidos. 
+                Limitaciones: Requiere un alto nivel de experiencia técnica y herramientas avanzadas.
+            </li>
+            <li><strong>Modelo en Espiral:</strong> Uso: Proyectos grandes, complejos o de alto riesgo. 
+                Importancia: Introduce la gestión de riesgos como parte esencial del desarrollo. 
+                Ventajas: Reduce riesgos al revisar el proyecto en iteraciones planificadas. 
+                Limitaciones: Requiere tiempo y experiencia en análisis de riesgos.
+            </li>
+            <li><strong>Modelo RAD (Rapid Application Development):</strong> Uso: Proyectos con requisitos dinámicos y necesidad de plazos cortos. 
+                Importancia: Se utiliza para acelerar el desarrollo mediante prototipos y componentes reutilizables. 
+                Ventajas: Rápida respuesta a los cambios en los requisitos y menor tiempo de entrega. 
+                Limitaciones: Es menos efectivo para proyectos grandes o con restricciones técnicas.
+            </li>
+        </ul>
+        <img id="miImagen2" src="imagenes2/metodologiasdesarrollo.png" alt="Imagen del software y hardware">
+    </section>
+
+    <section> <!-- Sección de metodologías de desarrollo de software actuales. -->
+        <h2>Metodologías de desarrollo de software actuales</h2>
+        <p> <!-- Introducción breve a las metodologías ágiles. -->
+            En la actualidad, las metodologías ágiles son ampliamente utilizadas por su enfoque en la colaboración, la
+            adaptabilidad y la entrega rápida de valor al cliente. Estas metodologías permiten a los equipos responder
+            rápidamente a los cambios y entregar productos de alta calidad de manera iterativa.
+        </p>
+        <ul> <!-- Lista que detalla las metodologías ágiles (Scrum y Kanban) con más explicación. -->
+            <li><strong>Scrum:</strong> Es un marco ágil que organiza el trabajo en ciclos llamados sprints, con una duración típica de 2 a 4 semanas. 
+                <ul>
+                    <li>Durante cada sprint, el equipo trabaja en un conjunto de tareas previamente priorizadas por el Product Owner.</li>
+                    <li>El equipo se reúne diariamente en reuniones cortas llamadas *daily stand-ups* para sincronizarse y resolver bloqueos.</li>
+                    <li>Al finalizar el sprint, se lleva a cabo una revisión para presentar el trabajo terminado y una retrospectiva para identificar mejoras en el proceso.</li>
+                    <li>Este enfoque ayuda a entregar incrementos funcionales de manera regular, lo que permite ajustes rápidos según la retroalimentación recibida.</li>
+                </ul>
+            </li>
+            <li><strong>Kanban:</strong> Es una metodología ágil que utiliza un sistema visual de gestión del flujo de trabajo para optimizar los procesos. 
+                <ul>
+                    <li>Se basa en un tablero dividido en columnas que representan el estado de las tareas, como "Por hacer", "En progreso" y "Completado".</li>
+                    <li>El equipo limita la cantidad de tareas en cada columna para evitar sobrecargas y mejorar la eficiencia.</li>
+                    <li>Es especialmente útil para proyectos que no tienen plazos rígidos y necesitan un flujo continuo de trabajo en lugar de ciclos cerrados.</li>
+                    <li>Proporciona una vista clara del progreso y ayuda a identificar problemas, como cuellos de botella, para implementar mejoras rápidamente.</li>
+                </ul>
+            </li>
+        </ul>
+        <img id="miImagen2" src="imagenes2/metodologiasactuales.png" alt="Imagen del software y hardware">
+
+        <footer> <!-- Pie de página que incluye las fuentes utilizadas. -->
+            Fuentes:
+            <a href="https://www.lovtechnology.com/" target="_blank">Lovtechnology</a>,
+            <a href="https://www.guru99.com/" target="_blank">Guru99</a>,
+            <a href="https://es.wikipedia.org/wiki/Ingenier%C3%ADa_de_software" target="_blank">Ingeniería del
+                Software</a>,
+            <a href="https://chat.openai.com/" target="_blank">Chat GPT</a>,
+            <a href="https://micarrerauniversitaria.com/" target="_blank">Mi carrera universitaria</a>.
+        </footer>
+    </section>
+
+    </body>
+</html>

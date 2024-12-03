@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+body { /* Estilo general para el cuerpo del documento */
+    font-family: 'Roboto',  Arial, sans-serif; /* Fuente de Roboto */
+    line-height: 1.6; /* Ajusta la línea de texto */
+    color: #333; /* Color de texto */
+    max-width: 1000px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenido */
+    padding: 20px; /* Espacio alrededor del contenido */
+    background-color: #f9f9f9; /* Fondo blanco */
+    line-height: 1.8; /* Ajusta la línea de texto */
+}
+.navbar { /* Estilo para la barra de navegación */
+    position: fixed; /* Fija la barra de navegación */
+    top: 0; /* Alinea la barra de navegación al inicio */
+    left: 0;  /* Alinea la barra de navegación al inicio */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    background: linear-gradient(to right, #4CAF50, #1e88e5); /* Degradado */
+    background-color: rgba(28,110,164,0.71);
+    padding: 3px 0;
+    z-index: 1000;  /* Hace que la barra de navegación esté por encima de otros elementos */
+    display: flex; /* Hacer la barra de navegación un contenedor flexible */
+    justify-content: space-between; /* Espacia los elementos */
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+.navbar .links { /* Estilo para los enlaces de la barra de navegación */
+    display: flex; /* Agrupar los enlaces */
+    gap: 5px; /* Espacio entre los enlaces */
+}
+.navbar a { /* Estilo para los enlaces de la barra de navegación */
+    color: white;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    margin: 0 15px; /* Añade margen horizontal a los enlaces */
+    padding: 10px; /* Añade padding alrededor de los enlaces */
+}
+.navbar a:hover { /* Estilo para los enlaces de la barra de navegación al pasar el ratón */
+    background-color: #ffffff; /* Fondo blanco */
+}
+.navbar .logo img { /* Estilo para el logo de la barra de navegación */
+    height: 40px; /* Ajusta el tamaño del logo */
+    width: auto; /* Mantiene la proporción del logo */
+}
+.content { /* Estilo para el contenido principal */
+    margin-top: 60px; 
+}
+
+/* Estilos del botón flotante */
+.scrollToTopBtn {
+    position: fixed; /* Fija el botón en la parte inferior derecha */
+    bottom: 40px;    /* Alinea el botón 40px desde el fondo */
+    right: 30px;     /* Alinea el botón 30px desde la derecha */
+    padding: 10px 20px; /* Padding dentro del botón */
+    font-size: 30px;
+    background: linear-gradient(to right, #4CAF50, #1e88e5); /* Degradado */
+    background-color: rgba(28,110,164,0.71);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0; /* Inicialmente oculto */
+    visibility: hidden; /* Inicialmente oculto */
+    transform: scale(0.8); /* Comienza con un tamaño más pequeño */
+    transition: opacity 0.5s ease, visibility 0s 0.5s, transform 0.5s ease; /* Transición suave */
+}
+
+.scrollToTopBtn.show { /* Estilo para el botón flotante cuando está visible */
+    opacity: 1; /* Opacidad completa cuando está visible */
+    visibility: visible; /* Hacerlo visible */
+    transform: scale(1); /* Escala normal cuando está visible */
+    transition: opacity 0.5s ease, visibility 0s 0s, transform 0.5s ease; /* Transición de visibilidad */
+}
+
+.scrollToTopBtn:hover { /* Estilo para el botón flotante al pasar el ratón */
+    background-color: #3498db;
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón por encima */
+}
+
+.background-image { /* Estilo para el fondo de la página */
+  background-image: url('Imagenes1/etapas\ desarrollo\ de\ software.jpg') ;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: o;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.content{ /* Estilo para el contenido principal */
+    max-width: 1000px; 
+    margin: 60px auto; 
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 1); 
+    border-radius: 8px;  /* Bordes redondeados */
+}
+
+/* Contenedor del iframe */
+.video-container {
+    background: #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 80%;  /* Ancho por defecto */
+    max-width: 800px; /* Ancho máximo */
+}
+
+/* Estilo del iframe */
+iframe {
+    width: 100%; /* Hace que el iframe se ajuste al contenedor */
+    height: 350px; /* Altura fija para el video */
+    border-radius: 10px;
+}
+
+p, ul, ol { /* Estilo para párrafos, listas y listas ordenadas */
+    max-width: 70ch;
+}
+
+ul { /* Estilo para listas */
+    list-style-type: none;
+}
+
+p img {
+    height: 60%;
+    width: 50%;
+    max-width: none; /* Anula el max-width de las imágenes generales */
+    float: none; /* Anula el float de las imágenes generales */
+    margin: 10px auto; /* Centra la imagen horizontalmente */
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+}
+
+ul li::before { /* Estilo para los puntos de listas */
+    content: "•";
+    color: #3498db;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+h1, h2, h3, h4{ /* Estilo para los títulos de página */
+    color: #2c3e50;
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+h1 { /* Estilo para el título principal */
+    text-align: center;
+    background: linear-gradient(to right, #4CAF50, #1e88e5); /* Degradado */
+    color: white;
+    padding: 20px 0;
+    margin: 0;
+    font-size: 2.5rem;
+
+}
+h2{ /* Estilo para el título secundario */
+    font-size: 2em;
+}
+h3 { /* Estilo para el título terciario */
+    font-size: 1.5em;
+}
+h4 { /* Estilo para el título cuarto */
+  font-size: 1.2em;
+}
+
+p { /* Estilo para párrafos */
+    margin-bottom: 20px;
+}
+ul, ol { /* Estilo para listas */
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+li { /* Estilo para los elementos de listas */
+    margin-bottom: 10px;
+}
+
+a{  /* Estilo para los enlaces */
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease;
+
+}
+a:hover { /* Estilo para los enlaces al pasar el ratón */
+    color: #2980b9;
+    border-bottom-color:#3498db;
+}
+
+
+img{ /* Estilo para imágenes */
+    max-width: 200px;
+    height: auto;
+    float: center;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    width: 200px;
+    height: 150px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    
+}
+
+img:hover{ /* Estilo para imágenes al pasar el ratón */
+   transform: scale(1.05);
+   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+   transform: translateY(-5px);
+}
+
+
+@media (max-width: 600px){ /* Estilos para pantallas pequeñas */
+    body {
+        padding: 10px;
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 2rm;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    h3{
+        font-size: 1.3em;
+    }
+    h4 {
+        font-size: 1.1em;
+    }
+
+    img {
+        float: none;
+        display: block;
+        margin: 10px auto;
+    }
+    .navbar a{
+        font-size: 0.7rem;
+       padding: 4px;
+       margin: 0 13px;
+
+
+     }
+
+
+}
