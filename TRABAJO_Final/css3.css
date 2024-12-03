@@ -1,0 +1,244 @@
+/* Estilos generales */
+body {
+    background-image: url(Imagenes1/etapas\ desarrollo\ de\ software.jpg);
+    background-size: cover; 
+    background-attachment: fixed; 
+    margin: 4%; 
+    padding: 0;
+    font-family: 'Bitter', serif; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    flex-direction: column;
+}
+
+h1, h2, h3, ol, ul, p {
+    text-align: justify; 
+    margin: 15px 0; 
+}
+
+h1 {
+    font-family: 'Arial', sans-serif; /* Define la fuente para los encabezados h1 */
+    font-weight: bold; /* Hace el texto en negrita */
+    letter-spacing: 1px; 
+    text-align: center; 
+    border-bottom: 4px solid #007bff; 
+    padding-bottom: 10px; /* Añade un poco de espacio debajo del texto y la línea */
+}
+
+#enlace {
+    background-color: #9672d8; 
+    color: #fff; 
+    padding: 10px 20px; /* Añade padding alrededor del texto */
+    margin: 20px auto; /* Añade margen alrededor y centra el elemento */
+    border-radius: 8px; 
+    max-width: 80%; /* Establece el máximo ancho al 80% del contenedor */
+    font-size: 1.5rem; /* Establece el tamaño de la fuente */
+    text-align: center; 
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+}
+
+h2 {
+    background-color: #176635; 
+    color: #fff; 
+    padding: 10px 20px; /* Padding alrededor del texto */
+    margin: 20px auto; /* Márgenes alrededor del elemento y centrado */
+    border-radius: 8px; 
+    max-width: 80%; /* Ancho máximo al 80% del contenedor */
+    font-size: 1.5rem;
+    text-align: center; 
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+}
+
+.container {
+    background-color: #fff; /* Fondo blanco */
+    width: 80%; /* Establece el ancho del contenedor al 80% */
+    max-width: 900px; /* Ancho máximo de 900px */
+    min-height: 90vh; /* Altura mínima al 90% de la altura de la ventana */
+    margin: 60px; /* Aplica margen alrededor del contenedor */
+    padding: 40px; /* Añade padding dentro del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor del contenedor */
+    overflow-y: auto; /* Permite desplazarse si el contenido excede la altura del contenedor */
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    display: block; 
+    margin: 20px auto; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+.navbar img{
+    max-width: 200px;
+    height: auto;
+    float: center;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4pxx rgba(0, 0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    width: 200px;
+    height: 150px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    
+}
+
+img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+ }
+
+
+table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 20px auto; 
+    background-color: #fff; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+}
+
+td {
+    padding: 10px; /* Padding dentro de las celdas */
+    border: 1px solid #ddd; /* Borde suave alrededor de las celdas */
+    vertical-align: top; /* Alinea el contenido verticalmente hacia arriba */
+}
+
+ol, ul {
+    padding-left: 40px; /* Agrega espacio a la izquierda para las listas */
+}
+
+table td ul {
+    padding: 0; 
+    margin: 0; /* Elimina el margen de las listas */
+    list-style-type: none; /* Elimina las viñetas de la lista */
+}
+
+table td ul li {
+    border-bottom: 1px solid #e0e0e0; 
+    padding: 10px 0; 
+}
+
+table td img {
+    display: block; 
+    margin: auto; 
+    max-width: 150px;
+    height: auto; 
+}
+
+/* Barra de navegación fija */
+.navbar {
+    position: fixed; /* La barra de navegación estará fija en la parte superior */
+    top: 0; /* Alinea la barra al top de la página */
+    left: 0; /* Alinea la barra a la izquierda */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    background: linear-gradient(to right, #4CAF50, #1e88e5); /* Degradado de color para el fondo */
+    background-color: rgba(28,110,164,0.71); /* Fondo semi-transparente */
+    padding: 3px 0; /* Padding vertical */
+    z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
+    display: flex; /* Usamos Flexbox para organizar los elementos dentro de la barra */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+.navbar .links {
+    display: flex; /* Agrupa los enlaces en línea */
+    gap: 5px; /* Espacio entre los enlaces */
+}
+
+.navbar a {
+    color: white; /* Color de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    margin: 0 15px; /* Añade margen horizontal a los enlaces */
+    padding: 10px; /* Padding alrededor de los enlaces */
+}
+
+.navbar a:hover {
+    background-color: #9c6d6d; /* Cambia el fondo del enlace al pasar el ratón */
+    border-radius: 60px; /* Bordes redondeados cuando se pasa el ratón */
+}
+
+.navbar .logo img {
+    height: 40px; /* Ajusta el tamaño del logo */
+    width: auto; /* Mantiene la proporción del logo */
+}
+
+.content {
+    margin-top: 60px; /* Añade margen superior para evitar que el contenido se solape con la barra de navegación */
+}
+
+.scrollToTopBtn {
+    position: fixed; /* Fija el botón en la parte inferior derecha */
+    bottom: 40px; /* Alinea el botón 40px desde el fondo */
+    right: 30px; /* Alinea el botón 30px desde la derecha */
+    padding: 10px 20px; /* Padding dentro del botón */
+    font-size: 30px; /* Tamaño de la fuente del botón */
+    background: linear-gradient(to right, #17941b, #0f4e09); /* Degradado de fondo */
+    color: white; /* Color blanco para el texto */
+    border: none; /* Elimina el borde por defecto */
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer; /* Muestra el cursor de puntero */
+    opacity: 0; /* Inicialmente el botón es invisible */
+    visibility: hidden; /* El botón no es visible */
+    transform: scale(0.8); /* Reduce el tamaño del botón */
+    transition: opacity 0.5s ease, visibility 0s 0.5s, transform 0.5s ease; /* Animaciones de transición para visibilidad y tamaño */
+}
+
+.scrollToTopBtn.show {
+    opacity: 1; 
+    visibility: visible; 
+    transform: scale(1); 
+    transition: opacity 0.5s ease, visibility 0s 0s, transform 0.5s ease; 
+}
+
+.scrollToTopBtn:hover {
+    transform: scale(1.1); 
+}
+
+/* Footer */
+.footer {
+    background-color: #000; 
+    color: white; 
+    text-align: center; 
+    padding: 20px 0; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+    margin-top: 40px; 
+    border-radius: 4px; 
+}
+
+.footer p {
+    margin: 0; 
+    font-size: 14px; 
+}
+
+/* Diseño para pantallas pequeñas o que varian su tamaño */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem; /* Disminuye el tamaño de la fuente en pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 2rem; /* Reduce el tamaño del encabezado en pantallas pequeñas */
+    }
+
+    /* Ajusta el tamaño y espaciado de los enlaces en la barra de navegación */
+    .navbar a {
+        font-size: 0.7rem; /* Hace los enlaces más pequeños */
+        padding: 4px; /* Reduce el relleno dentro de los enlaces */
+        margin: 0 13px; /* Reduce el espacio entre los enlaces */
+    }
+    img {
+        float: none;
+        display: block;
+        margin: 10px auto;
+    }
+
+    section {
+        padding: 15px; /* Reduce el relleno interno de las secciones en pantallas pequeñas */
+    }
+}
